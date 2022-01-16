@@ -1,2 +1,2 @@
 # Book-store
-Учебный дипломный проект Glo Academy
+# Учебный дипломный проект Glo Academy
