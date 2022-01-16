@@ -1,0 +1,111 @@
+/*******Modals************/
+.modal
+  &__overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+
+    &--visible
+      visibility: visible
+      opacity: 1
+
+
+/*******Booking-modal************/
+.booking
+  
+  &-modal
+    color: #ffffff
+    background-color: #0A223D
+    border-radius: 8px
+    padding: 35px 88px 33px 88px
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 110
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    overflow-y: auto
+    max-width: 478px
+       
+    &--visible
+      visibility: visible
+      opacity: 1
+
+
+    &__close
+      position: absolute
+      width: 25px
+      height: 16px
+      right: 14px
+      top: 15px
+      cursor: pointer
+
+    &__title 
+      text-transform: uppercase
+      text-align: center
+      font-size: 18px
+      font-weight: 700
+      margin-bottom: 15px
+
+    &__footer 
+      padding: 0
+      margin: 0
+      border-style: none
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+      font-size: 12px
+      font-weight: 700
+
+    &__submit 
+      background-color: #EC1F46
+      color: #ffffff
+      border-radius: 4px
+      padding: 18px 66px
+      cursor: pointer
+
+  &-form 
+    min-width: 302px
+
+    &__input,
+    &__message
+      width: 100%
+      border-radius: 4px
+
+    &__input 
+      height: 50px
+      margin-top: 15px
+      padding: 24px
+      
+    &__input::-moz-placeholder
+      +form-style
+
+    &__input::-webkit-input-placeholder 
+      +form-style
+
+    &__message 
+      padding: 18px 22px
+      min-height: 123px
+      margin-top: 15px
+      margin-bottom: 16px
+      overflow: auto
+      resize: none
+
+    &__message::-webkit-input-placeholder
+      +form-style
+
+    &__message::-moz-placeholder 
+      +form-style
+
+
+
