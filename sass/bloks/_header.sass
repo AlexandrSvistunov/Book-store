@@ -1,25 +1,32 @@
 /********** Header ***********/
 .header
+  padding-top: 37px
+
   &__menu-burger
     display: none
 
-  &__top
-    background-color: #ffffff
-    padding-top: 40px
-    padding-bottom: 40px
-
-    .container
-      display: flex
-      align-items: center
-      justify-content: space-between
+  .container
+    display: flex
+    align-items: center
+    justify-content: space-between
 
   &__logo 
-    width: 177px
-    margin-right: 9.7%
+    width: 90px
+
+  &__button
+    border: 2px solid $button-color
+    border-radius: 8px
+    color: $button-color
+    font-weight: 700
+    font-size: 16px
+    padding: 13px 32px
+    cursor: pointer
+    &--mobile
+      display: none
 
 .menu-burger
-  height: 13px
-  width: 16px
+  width: 22px
+  height: 17.7px
   padding: 0
   align-items: center
   justify-content: space-between
@@ -28,18 +35,36 @@
 
   &__line
     display: block
-    width: 16px
-    height: 1px
-    background-color: $primary-color
-   
+    width: 22px
+    height: 2.2px
+    background-color: #3A4C66
+  
 
 .header-nav
+  margin-left: auto
+  margin-right: 5.5%
+
+  &__list
+    display: flex
+    align-items: center
+    justify-content: space-between
+    
+
+  &__link
+    font-weight: 600
+    font-size: 16px
+    color: $title-color
   
-  
-  &__mobile
-    display: none
 
   &__item
-    margin-right: 2%
-    white-space: nowrap  
+    margin-right: 23px
+    &:last-child
+      margin-right: 0
 
+  &-mobile
+    display: none
+
+    &__link
+      font-weight: 600
+      font-size: 18px
+      color: $title-color

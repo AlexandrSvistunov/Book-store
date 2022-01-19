@@ -1,0 +1,82 @@
+/******** Product **********/
+.product
+  
+  .container
+    display: flex
+    justify-content: space-between
+
+  &__title
+    font-family: Roboto
+    font-style: normal
+    font-weight: 700
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+    color: $title-color
+    margin-bottom: 27px
+
+    span
+      color: #FAAD13
+
+  &__subtitle
+    font-family: Roboto
+    font-weight: 500
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.2px
+    color: $title-color
+    text-transform: uppercase
+    margin-bottom: 37px
+
+  &__info
+    padding-top: 48px
+    margin-right: 4vw
+
+    &-text
+      font-size: 18px
+      line-height: 32px
+      color: $text-color
+      margin-bottom: 54px
+
+    &-buttons
+      display: flex
+      align-items: center
+
+    &-leftbutton, &-rightbutton
+      cursor: pointer
+      font-weight: 700
+      text-transform: uppercase
+      border-radius: 8px
+
+    &-leftbutton
+      background-color: $button-color
+      color: #ffffff
+      font-size: 16px
+      padding: 20px 37px
+      margin-right: 4.1%
+    
+    &-rightbutton
+      border: 2px solid $button-color
+      color: $button-color
+      font-size: 18px
+      padding: 17px 51px
+   
+  &__img-bg
+    background-color: $background-color
+    width: 42.8%
+    height: 40.3vw
+    position: relative
+    flex-shrink: 0
+
+  
+       
+  &__img
+    max-width: 100%
+
+    &-wrapper
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.08)
+   

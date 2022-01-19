@@ -16,22 +16,80 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <a href="index.html" class="logo"></a>
-            <nav>
-                <ul class="header-nav">
-                    <li class="header-nav_item">
-                        <a href="#" class="header-nav_link"></a>
+            <a href="index.html" class="logo">
+                <img src="img/svg/logo.svg" alt="Logo: Ehya" />
+            </a>
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link">Рекомендации</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link">Книги</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link">Блог</a>
                     </li>
                 </ul>
                 <!-- /.header-nav -->
             </nav>
+            <button data-toggle="modal" class="header__button">Получить</button>
+            <button class="menu-burger header__menu-burger">
+          <span class="menu-burger__line"></span>
+          <span class="menu-burger__line"></span>
+          <span class="menu-burger__line"></span>
+        </button>
         </div>
         <!-- /.container -->
+
+        <nav class="header-nav-mobile">
+            <ul class="header-nav-mobile__list">
+                <li class="header-nav-mobile__item">
+                    <a href="#" class="header-nav-mobile__link">Рекомендации</a>
+                </li>
+                <li class="header-nav-mobile__item">
+                    <a href="#" class="header-nav-mobile__link">Книги</a>
+                </li>
+                <li class="header-nav-mobile__item">
+                    <a href="#" class="header-nav-mobile__link">Блог</a>
+                </li>
+            </ul>
+            <!-- /.header-nav -->
+            <button data-toggle="modal" class="header__button">Получить</button>
+        </nav>
     </header>
     <!-- /.header -->
     <!-- Main -->
     <main class="main">
-        <section class="product"></section>
+        <section class="product">
+            <div class="container">
+                <h1 class="visually-hidden">Ehya - Книжный магазин</h1>
+                <div class="product__info">
+                    <h2 class="product__title">
+                        <span>Design Theory: </span><br />The Psychology of<br />Graphic Design Pricing
+                    </h2>
+                    <h3 class="product__subtitle">Книга мишеля янга</h3>
+                    <p class="product__info-text">
+                        Спустя 15 лет я управляю собственной студией, выполнив тысячи проектов для крупных клиентов. Теперь я делюсь своими золотыми стратегиями ценообразования на творческую работу.
+                    </p>
+                    <div class="product__info-buttons">
+                        <button data-toggle="modal" class="product__info-leftbutton">
+                Купить сейчас
+              </button>
+                        <button class="product__info-rightbutton">Читать демо</button>
+                    </div>
+                    <!-- /.product__info-battons -->
+                </div>
+                <!-- /.product__info -->
+                <div class="product__img-bg">
+                    <div class="product__img-wrapper">
+                        <img class="product__img" src="img/book-image.jpg" alt="book cover" />
+                    </div>
+                </div>
+                <!-- /.product__img -->
+            </div>
+            <!-- /.container -->
+        </section>
         <!-- /.product -->
         <section class="product-cards"></section>
         <!-- /.product-cards -->
@@ -52,13 +110,41 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <nav class="footer-nav">
-            </nav>
+            <nav class="footer-nav"></nav>
             <!-- /.footer-nav -->
         </div>
         <!-- /.footer-container -->
     </footer>
     <!-- /.footer -->
+
+    <!-- Modals -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <!-- purchase-modal -->
+        <div class="purchase-modal">
+            <button class="purchase-modal__close">
+          <img src="img/svg/close.svg" alt="Close" />
+        </button>
+            <h3 class="purchase-modal__title">Купить сейчас</h3>
+            <form action="send.php" method="POST" class="purchase-form validate-form" name="purchase-form">
+                <input class="purchase-form__input" type="text" placeholder="Ваше полное имя*" name="name" required minlength="2" />
+                <input class="purchase-form__input mask-phone" type="tel" placeholder="Номер телефона*" name="phone" required />
+                <input class="purchase-form__input" type="email" placeholder="Email*" name="email" required />
+                <textarea class="purchase-form__message" placeholder="Ваше сообщение" name="message"></textarea>
+                <fieldset class="purchase-modal__footer">
+                    <input class="purchase-modal__submit" type="submit" value="Отправить" />
+                    <p>* Обязательные поля</p>
+                </fieldset>
+            </form>
+            <!-- /.purchase-form -->
+        </div>
+        <!-- /.purchase-modal -->
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

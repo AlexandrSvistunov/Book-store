@@ -1,8 +1,13 @@
 /******* Media **********/
 @media (min-width: 1440px)
+  .container
+    width: 1440px
  
 
-@media (max-width: 1430px)
+@media (max-width: 1400px)
+  .product
+    &__img-bg
+      height: auto
   
 
 @media (max-width: 1269px)
@@ -11,7 +16,14 @@
 @media (max-width: 1200px)
 
 
-@media (max-width: 1100px)
+@media (max-width: 1140px)
+  .product
+    &__info
+      &-leftbutton
+        padding: 10px 20px
+      &-rightbutton
+        padding: 8px 28px
+        font-size: 16px
  
 
 @media (max-width: 1030px)
@@ -35,8 +47,36 @@
       transform: scaleX(0)
       transition: transform 0.25s
 
+  .purchase
+    &-modal__submit
+      &:hover
+        background-color: $hover-button
+
+      &:active
+        background-color: $active-button
+
   
 @media (max-width: 992px)
+  .product
+    .container
+      flex-wrap: wrap
+
+    &__info
+      margin-bottom: 36px
+      &-text
+        text-align: justify
+      &-buttons
+        justify-content: center
+
+    &__img
+      width: 100%
+
+    &__img-wrapper
+      width: 56.6%
+
+    &__img-bg
+      width: 100%
+      height: 103.8vw
 
  
 @media (max-width: 768px)
@@ -44,13 +84,40 @@
   
     
 /********** Мобильное меню ***********/ 
-@media (max-width: 767px)
+@media (max-width: 700px)
 
-  
+  .main
+    padding-top: 5px
 
-@media (max-width: 745px)
+  .header
+    &-nav, &__button
+      display: none
 
-  
+    &-nav, &__button
+        display: none
+
+    &__menu-burger
+        display: flex
+
+    &-nav-mobile
+      &--toogle
+        display: block
+        margin-right: 0
+        padding-top: 30px
+
+        .header-nav-mobile
+          &__list
+            display: flex
+            flex-direction: column
+            align-items: center
+
+          &__item
+            margin-right: 0
+            margin-bottom: 20px
+
+        .header__button
+            display: block
+            margin: auto
 
 @media (max-width: 660px)
 
@@ -63,11 +130,75 @@
 
 
 @media (max-width: 530px)
+ 
+  .purchase
+
+    &-modal
+      padding-right: 8vw
+      padding-left: 8vw
+
+    &-form
+      min-width: 70vw
 
     
 
 @media (max-width: 490px)
+
+  .container
+    max-width: 91.1%
+
+  .header
+    padding-top: 18px
+
+    .container
+      max-width: 85%
+
+  .product
+    &__info
+      text-align: center
+      margin-right: 0
+      &-text
+        text-align: center
+        font-size: 16px
+        line-height: 23px
+        margin-bottom: 18px
+
+      &-buttons
+        flex-direction: column
+
+      &-leftbutton
+        margin-right: 0
+        margin-bottom: 17px
+
+    &__title
+      margin-bottom: 25px
+
+    &__subtitle
+      margin-bottom: 32px
+
+    &__img-wrapper
+      width: 48.6%
  
+    &__title
+      font-size: 32px
+      line-height: 40px
+
+    
+    &__subtitle
+      font-size: 16px
+
+  .modal
+
+    .purchase
+      &-modal
+               
+        &__footer
+          flex-wrap: wrap
+
+        &__submit
+          width: 100%
+          margin-bottom: 15px
+
 
 @media (max-width: 400px)
   
