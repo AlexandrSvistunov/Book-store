@@ -22,10 +22,10 @@
             <nav class="header-nav">
                 <ul class="header-nav__list">
                     <li class="header-nav__item">
-                        <a href="#" class="header-nav__link">Рекомендации</a>
+                        <a href="#recommended" class="header-nav__link">Рекомендации</a>
                     </li>
                     <li class="header-nav__item">
-                        <a href="#" class="header-nav__link">Книги</a>
+                        <a href="#books" class="header-nav__link">Книги</a>
                     </li>
                     <li class="header-nav__item">
                         <a href="#" class="header-nav__link">Блог</a>
@@ -45,10 +45,10 @@
         <nav class="header-nav-mobile">
             <ul class="header-nav-mobile__list">
                 <li class="header-nav-mobile__item">
-                    <a href="#" class="header-nav-mobile__link">Рекомендации</a>
+                    <a href="#recommended" class="header-nav-mobile__link">Рекомендации</a>
                 </li>
                 <li class="header-nav-mobile__item">
-                    <a href="#" class="header-nav-mobile__link">Книги</a>
+                    <a href="#books" class="header-nav-mobile__link">Книги</a>
                 </li>
                 <li class="header-nav-mobile__item">
                     <a href="#" class="header-nav-mobile__link">Блог</a>
@@ -76,7 +76,7 @@
                         <button data-toggle="modal" class="product__info-leftbutton">
                 Купить сейчас
               </button>
-                        <button class="product__info-rightbutton">Читать демо</button>
+                        <a href="#" class="product__info-rightbutton">Читать демо</a>
                     </div>
                     <!-- /.product__info-battons -->
                 </div>
@@ -91,9 +91,160 @@
             <!-- /.container -->
         </section>
         <!-- /.product -->
-        <section class="product-cards"></section>
+
+        <section class="product-cards">
+            <div class="container">
+                <div class="recommended">
+                    <h2 id="recommended" class="recommended__title">Рекомендации</h2>
+                    <div class="recommended__box">
+                        <div class="product-card">
+                            <div class="product-card__img-box"><img src="img/card-img-1.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__title">The World of Abstract Art</h3>
+                                <h4 class="product-card__subtitle">Art & Design</h4>
+                                <span class="product-card__price">$25.00</span>
+                                <div class="product-card__purchase">
+                                    <button data-toggle="modal" class="product-card__button">Купить</button>
+                                    <svg class="product-card__like" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" fill="#959EAD"/>
+                                            </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-box"><img src="img/card-img-2.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__title">Educated : a&nbsp;Memoir</h3>
+                                <h4 class="product-card__subtitle">Education</h4>
+                                <span class="product-card__price">$28.00</span>
+                                <div class="product-card__purchase">
+                                    <button data-toggle="modal" class="product-card__button">Купить</button>
+                                    <svg class="product-card__like" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" fill="#959EAD"/>
+                                            </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-box"><img src="img/card-img-3.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__title">The Blue Flowers Ray…</h3>
+                                <h4 class="product-card__subtitle">Novel</h4>
+                                <span class="product-card__price">$19.50</span>
+                                <div class="product-card__purchase">
+                                    <button data-toggle="modal" class="product-card__button">Купить</button>
+                                    <svg class="product-card__like" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" fill="#959EAD"/>
+                                            </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-box"><img src="img/card-img-4.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__title">There There : a&nbsp;Novel by TO</h3>
+                                <h4 class="product-card__subtitle">Art & Design</h4>
+                                <span class="product-card__price">$20.00</span>
+                                <div class="product-card__purchase">
+                                    <button data-toggle="modal" class="product-card__button">Купить</button>
+                                    <svg class="product-card__like" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" fill="#959EAD"/>
+                                            </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-box"><img src="img/card-img-5.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__title">WMNDFL : The&nbsp;Inspiration</h3>
+                                <h4 class="product-card__subtitle">Business</h4>
+                                <span class="product-card__price">$23.00</span>
+                                <div class="product-card__purchase">
+                                    <button data-toggle="modal" class="product-card__button">Купить</button>
+                                    <svg class="product-card__like" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" fill="#959EAD"/>
+                                            </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-box"><img src="img/card-img-6.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__title">Making Things&nbsp;Happen</h3>
+                                <h4 class="product-card__subtitle">Motivation</h4>
+                                <span class="product-card__price">$23.00</span>
+                                <div class="product-card__purchase">
+                                    <button data-toggle="modal" class="product-card__button">Купить</button>
+                                    <svg class="product-card__like" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" fill="#959EAD"/>
+                                            </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- /.product-card -->
+                    </div>
+                    <!-- /.recommended__box -->
+                    <a href="#" class="recommended__button">Больше рекомендаций</a>
+                </div>
+                <!-- /.recommended -->
+                <div class="best">
+                    <h2 id="books" class="best__title">Топ Месяца</h2>
+                    <div class="best__box">
+                        <div class="product-card product-card--best">
+                            <div class="product-card__img-box product-card__img-box--best"><img src="img/best-book-img-1.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__info product-card__info--best">
+                                <h3 class="product-card__title product-card__title--best">Sprint : Solve, Test in 5 Days</h3>
+                                <span class="product-card__price product-card__price--best">$23.00</span>
+                                <button data-toggle="modal" class="product-card__button product-card__button--best">Купить</button>
+                            </div>
+                        </div>
+                        <div class="product-card product-card--best">
+                            <div class="product-card__img-box product-card__img-box--best"><img src="img/best-book-img-2.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__info product-card__info--best">
+                                <h3 class="product-card__title product-card__title--best">Hacking Growth Break Problem</h3>
+                                <span class="product-card__price product-card__price--best">$23.00</span>
+                                <button data-toggle="modal" class="product-card__button product-card__button--best">Купить</button>
+                            </div>
+                        </div>
+                        <div class="product-card product-card--best">
+                            <div class="product-card__img-box product-card__img-box--best"><img src="img/best-book-img-3.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__info product-card__info--best">
+                                <h3 class="product-card__title product-card__title--best">Very Nice a Novel by Mercy</h3>
+                                <span class="product-card__price product-card__price--best">$23.00</span>
+                                <button data-toggle="modal" class="product-card__button product-card__button--best">Купить</button>
+                            </div>
+                        </div>
+                        <div class="product-card product-card--best">
+                            <div class="product-card__img-box product-card__img-box--best"><img src="img/best-book-img-4.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__info product-card__info--best">
+                                <h3 class="product-card__title product-card__title--best">Hooked : How to Build Products</h3>
+                                <span class="product-card__price product-card__price--best">$23.00</span>
+                                <button data-toggle="modal" class="product-card__button product-card__button--best">Купить</button>
+                            </div>
+                        </div>
+                        <a class="best__button" href="#">Лучшие книги</a>
+
+                    </div>
+                    <!-- /.best__box -->
+                </div>
+                <!-- /.best -->
+            </div>
+
+        </section>
         <!-- /.product-cards -->
-        <section class="categories"></section>
+
+        <section class="categories">
+            <div class="container">
+
+            </div>
+            <!-- /.container -->
+        </section>
         <!-- /.categories -->
         <section class="unpublished"></section>
         <!-- /.unpublished -->
@@ -116,6 +267,7 @@
         <!-- /.footer-container -->
     </footer>
     <!-- /.footer -->
+    <a href="#" class="link-to-top"><img src="img/svg/up-arrow.svg" alt="Стрелка наверх"></a>
 
     <!-- Modals -->
     <div class="modal">

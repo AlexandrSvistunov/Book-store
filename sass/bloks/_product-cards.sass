@@ -1,0 +1,154 @@
+/*******Product-cards************/
+.product-cards
+  padding-top: 105px
+
+  .container
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.recommended
+
+  &__title
+    font-family: Roboto
+    font-weight: 700
+    font-size: 32px
+    letter-spacing: 0.2px
+    color: $title-color
+    margin-bottom: 32px
+
+  &__box
+    display: grid
+    grid-template-columns: repeat(2, minmax(280px, 358px))
+    grid-template-rows: repeat(3,260px)
+    grid-gap: 32px
+    margin-bottom: 25px
+
+  &__button
+    background-color: rgba(21, 101, 216, 0.1)
+    color: $button-color
+    font-family: Roboto
+    font-weight: 700
+    font-size: 16px
+    letter-spacing: 0.2px
+    text-transform: uppercase
+    width: 100%
+    border-radius: 8px
+    padding: 27px 0
+    display: flex
+    justify-content: center
+
+.product-card
+  display: flex
+  justify-content: space-between
+  border: 1px solid #ECEEF2
+  border-radius: 8px
+  padding: 10px 22px 10px 10px
+
+  &--best
+    border: none
+    padding: 23px 23px 0 23px
+    margin-bottom: 12px
+    width: 100%
+
+    &:nth-last-child(2)
+      margin-bottom: 29px
+
+
+  &__img-box
+    max-width: 160px
+    max-height: 238px
+    background-color: $background-color
+    border-radius: 8px
+    overflow: hidden
+
+    &--best
+      height: 178px
+
+  img
+    width: 100%
+    height: 100%
+
+  &__info
+    max-width: 144px
+    padding-top: 13px
+
+    &--best
+      padding-top: 10px
+      max-width: 166px
+
+  &__title
+    font-family: Roboto
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: $title-color
+    margin-bottom: 18px
+
+    &--best
+      margin-bottom: 14px
+
+  &__subtitle
+    font-family: Open Sans
+    font-weight: 400
+    font-size: 16px
+    color: $title-color
+    margin-bottom: 25px
+
+  &__price
+    font-family: Roboto
+    font-weight: 700
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.2px
+    color: $button-color
+    display: block
+    margin-bottom: 24px
+
+  &__purchase
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-right: 2px
+     
+  &__button
+    font-family: Open Sans
+    font-weight: 700
+    font-size: 16px
+    color: #FFFFFF
+    background-color: $title-color
+    border-radius: 2000px
+    cursor: pointer
+    padding: 9px 20px
+
+  &__like
+    cursor: pointer
+
+.best
+  &__title
+    font-family: Roboto
+    font-weight: 700
+    font-size: 32px
+    letter-spacing: 0.2px
+    color: $title-color
+    margin-bottom: 32px
+
+  &__box
+    background-color: $background-color
+    border-radius: 8px
+    width: 360px
+
+  &__button
+    color: $button-color
+    font-family: Roboto
+    font-weight: 700
+    font-size: 16px
+    letter-spacing: 0.2px
+    text-transform: uppercase
+    width: 89%
+    padding: 27px 0
+    display: flex
+    justify-content: center
+    border-top: 1px solid #ECEEF2
+    margin: 0 auto
