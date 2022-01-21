@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Ehya - Книжный магазин</title>
 </head>
@@ -45,10 +46,11 @@
         <nav class="header-nav-mobile">
             <ul class="header-nav-mobile__list">
                 <li class="header-nav-mobile__item">
-                    <a href="#recommended" class="header-nav-mobile__link">Рекомендации</a>
-                </li>
-                <li class="header-nav-mobile__item">
-                    <a href="#books" class="header-nav-mobile__link">Книги</a>
+                    <a href="#recommended" class="header-nav-mobile__link">Рекомендации</a
+            >
+          </li>
+          <li class="header-nav-mobile__item">
+            <a href="#books" class="header-nav-mobile__link">Книги</a>
                 </li>
                 <li class="header-nav-mobile__item">
                     <a href="#" class="header-nav-mobile__link">Блог</a>
@@ -98,93 +100,133 @@
                     <h2 id="recommended" class="recommended__title">Рекомендации</h2>
                     <div class="recommended__box">
                         <div class="product-card">
-                            <div class="product-card__img-box"><img src="img/card-img-1.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__img-box">
+                                <img src="img/card-img-1.jpg" alt="Обложка книги" />
+                            </div>
                             <div class="product-card__info">
                                 <h3 class="product-card__title">The World of Abstract Art</h3>
                                 <h4 class="product-card__subtitle">Art & Design</h4>
                                 <span class="product-card__price">$25.00</span>
                                 <div class="product-card__purchase">
-                                    <button data-toggle="modal" class="product-card__button">Купить</button>
+                                    <button data-toggle="modal" class="product-card__button">
+                      Купить
+                    </button>
                                     <svg class="product-card__like" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" fill="#959EAD"/>
-                                            </svg>
+                      <path
+                        d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z"
+                        fill="#959EAD"
+                      />
+                    </svg>
                                 </div>
-
                             </div>
                         </div>
                         <div class="product-card">
-                            <div class="product-card__img-box"><img src="img/card-img-2.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__img-box">
+                                <img src="img/card-img-2.jpg" alt="Обложка книги" />
+                            </div>
                             <div class="product-card__info">
                                 <h3 class="product-card__title">Educated : a&nbsp;Memoir</h3>
                                 <h4 class="product-card__subtitle">Education</h4>
                                 <span class="product-card__price">$28.00</span>
                                 <div class="product-card__purchase">
-                                    <button data-toggle="modal" class="product-card__button">Купить</button>
+                                    <button data-toggle="modal" class="product-card__button">
+                      Купить
+                    </button>
                                     <svg class="product-card__like" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" fill="#959EAD"/>
-                                            </svg>
+                      <path
+                        d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z"
+                        fill="#959EAD"
+                      />
+                    </svg>
                                 </div>
-
                             </div>
                         </div>
                         <div class="product-card">
-                            <div class="product-card__img-box"><img src="img/card-img-3.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__img-box">
+                                <img src="img/card-img-3.jpg" alt="Обложка книги" />
+                            </div>
                             <div class="product-card__info">
                                 <h3 class="product-card__title">The Blue Flowers Ray…</h3>
                                 <h4 class="product-card__subtitle">Novel</h4>
                                 <span class="product-card__price">$19.50</span>
                                 <div class="product-card__purchase">
-                                    <button data-toggle="modal" class="product-card__button">Купить</button>
+                                    <button data-toggle="modal" class="product-card__button">
+                      Купить
+                    </button>
                                     <svg class="product-card__like" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" fill="#959EAD"/>
-                                            </svg>
+                      <path
+                        d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z"
+                        fill="#959EAD"
+                      />
+                    </svg>
                                 </div>
-
                             </div>
                         </div>
                         <div class="product-card">
-                            <div class="product-card__img-box"><img src="img/card-img-4.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__img-box">
+                                <img src="img/card-img-4.jpg" alt="Обложка книги" />
+                            </div>
                             <div class="product-card__info">
-                                <h3 class="product-card__title">There There : a&nbsp;Novel by TO</h3>
+                                <h3 class="product-card__title">
+                                    There There : a&nbsp;Novel by TO
+                                </h3>
                                 <h4 class="product-card__subtitle">Art & Design</h4>
                                 <span class="product-card__price">$20.00</span>
                                 <div class="product-card__purchase">
-                                    <button data-toggle="modal" class="product-card__button">Купить</button>
+                                    <button data-toggle="modal" class="product-card__button">
+                      Купить
+                    </button>
                                     <svg class="product-card__like" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" fill="#959EAD"/>
-                                            </svg>
+                      <path
+                        d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z"
+                        fill="#959EAD"
+                      />
+                    </svg>
                                 </div>
-
                             </div>
                         </div>
                         <div class="product-card">
-                            <div class="product-card__img-box"><img src="img/card-img-5.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__img-box">
+                                <img src="img/card-img-5.jpg" alt="Обложка книги" />
+                            </div>
                             <div class="product-card__info">
-                                <h3 class="product-card__title">WMNDFL : The&nbsp;Inspiration</h3>
+                                <h3 class="product-card__title">
+                                    WMNDFL : The&nbsp;Inspiration
+                                </h3>
                                 <h4 class="product-card__subtitle">Business</h4>
                                 <span class="product-card__price">$23.00</span>
                                 <div class="product-card__purchase">
-                                    <button data-toggle="modal" class="product-card__button">Купить</button>
+                                    <button data-toggle="modal" class="product-card__button">
+                      Купить
+                    </button>
                                     <svg class="product-card__like" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" fill="#959EAD"/>
-                                            </svg>
+                      <path
+                        d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z"
+                        fill="#959EAD"
+                      />
+                    </svg>
                                 </div>
-
                             </div>
                         </div>
                         <div class="product-card">
-                            <div class="product-card__img-box"><img src="img/card-img-6.jpg" alt="Обложка книги"></div>
+                            <div class="product-card__img-box">
+                                <img src="img/card-img-6.jpg" alt="Обложка книги" />
+                            </div>
                             <div class="product-card__info">
                                 <h3 class="product-card__title">Making Things&nbsp;Happen</h3>
                                 <h4 class="product-card__subtitle">Motivation</h4>
                                 <span class="product-card__price">$23.00</span>
                                 <div class="product-card__purchase">
-                                    <button data-toggle="modal" class="product-card__button">Купить</button>
+                                    <button data-toggle="modal" class="product-card__button">
+                      Купить
+                    </button>
                                     <svg class="product-card__like" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" fill="#959EAD"/>
-                                            </svg>
+                      <path
+                        d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z"
+                        fill="#959EAD"
+                      />
+                    </svg>
                                 </div>
-
                             </div>
                         </div>
                         <!-- /.product-card -->
@@ -197,106 +239,246 @@
                     <h2 id="books" class="best__title">Топ Месяца</h2>
                     <div class="best__box">
                         <div class="product-card product-card--best">
-                            <div class="product-card__img-box product-card__img-box--best"><img src="img/best-book-img-1.jpg" alt="Обложка книги"></div>
-                            <div class="product-card__info product-card__info--best">
-                                <h3 class="product-card__title product-card__title--best">Sprint : Solve, Test in 5 Days</h3>
-                                <span class="product-card__price product-card__price--best">$23.00</span>
-                                <button data-toggle="modal" class="product-card__button product-card__button--best">Купить</button>
+                            <div class="product-card__img-box product-card__img-box--best">
+                                <img src="img/best-book-img-1.jpg" alt="Обложка книги" />
                             </div>
-                        </div>
-                        <div class="product-card product-card--best">
-                            <div class="product-card__img-box product-card__img-box--best"><img src="img/best-book-img-2.jpg" alt="Обложка книги"></div>
                             <div class="product-card__info product-card__info--best">
-                                <h3 class="product-card__title product-card__title--best">Hacking Growth Break Problem</h3>
-                                <span class="product-card__price product-card__price--best">$23.00</span>
-                                <button data-toggle="modal" class="product-card__button product-card__button--best">Купить</button>
-                            </div>
-                        </div>
-                        <div class="product-card product-card--best">
-                            <div class="product-card__img-box product-card__img-box--best"><img src="img/best-book-img-3.jpg" alt="Обложка книги"></div>
-                            <div class="product-card__info product-card__info--best">
-                                <h3 class="product-card__title product-card__title--best">Very Nice a Novel by Mercy</h3>
-                                <span class="product-card__price product-card__price--best">$23.00</span>
-                                <button data-toggle="modal" class="product-card__button product-card__button--best">Купить</button>
-                            </div>
-                        </div>
-                        <div class="product-card product-card--best">
-                            <div class="product-card__img-box product-card__img-box--best"><img src="img/best-book-img-4.jpg" alt="Обложка книги"></div>
-                            <div class="product-card__info product-card__info--best">
-                                <h3 class="product-card__title product-card__title--best">Hooked : How to Build Products</h3>
-                                <span class="product-card__price product-card__price--best">$23.00</span>
-                                <button data-toggle="modal" class="product-card__button product-card__button--best">Купить</button>
-                            </div>
-                        </div>
-                        <a class="best__button" href="#">Лучшие книги</a>
-
-                    </div>
-                    <!-- /.best__box -->
+                                <h3 class="product-card__title product-card__title--best">
+                                    Sprint : Solve, Test in 5 Days
+                                </h3>
+                                <span class="product-card__price product-card__price--best">$23.00</span
+                  >
+                  <button
+                    data-toggle="modal"
+                    class="product-card__button product-card__button--best"
+                  >
+                    Купить
+                  </button>
                 </div>
-                <!-- /.best -->
+              </div>
+              <div class="product-card product-card--best">
+                <div class="product-card__img-box product-card__img-box--best">
+                  <img src="img/best-book-img-2.jpg" alt="Обложка книги" />
+                </div>
+                <div class="product-card__info product-card__info--best">
+                  <h3 class="product-card__title product-card__title--best">
+                    Hacking Growth Break Problem
+                  </h3>
+                  <span class="product-card__price product-card__price--best"
+                    >$23.00</span
+                  >
+                  <button
+                    data-toggle="modal"
+                    class="product-card__button product-card__button--best"
+                  >
+                    Купить
+                  </button>
+                </div>
+              </div>
+              <div class="product-card product-card--best">
+                <div class="product-card__img-box product-card__img-box--best">
+                  <img src="img/best-book-img-3.jpg" alt="Обложка книги" />
+                </div>
+                <div class="product-card__info product-card__info--best">
+                  <h3 class="product-card__title product-card__title--best">
+                    Very Nice a Novel by Mercy
+                  </h3>
+                  <span class="product-card__price product-card__price--best"
+                    >$23.00</span
+                  >
+                  <button
+                    data-toggle="modal"
+                    class="product-card__button product-card__button--best"
+                  >
+                    Купить
+                  </button>
+                </div>
+              </div>
+              <div class="product-card product-card--best">
+                <div class="product-card__img-box product-card__img-box--best">
+                  <img src="img/best-book-img-4.jpg" alt="Обложка книги" />
+                </div>
+                <div class="product-card__info product-card__info--best">
+                  <h3 class="product-card__title product-card__title--best">
+                    Hooked : How to Build Products
+                  </h3>
+                  <span class="product-card__price product-card__price--best"
+                    >$23.00</span
+                  >
+                  <button
+                    data-toggle="modal"
+                    class="product-card__button product-card__button--best"
+                  >
+                    Купить
+                  </button>
+                </div>
+              </div>
+              <a class="best__button" href="#">Лучшие книги</a>
             </div>
+            <!-- /.best__box -->
+          </div>
+          <!-- /.best -->
+        </div>
+      </section>
+      <!-- /.product-cards -->
 
-        </section>
-        <!-- /.product-cards -->
-
-        <section class="categories">
-            <div class="container">
-
+      <section class="categories">
+        <div class="container">
+          <div class="swiper categories__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide categories__item">
+                  <img class="categories__item-img" src="img/categories-img-1.png" alt="Бизнес & Финансы">
+                  <h3 class="categories__item-title">Бизнес & Финансы</h3>
+                  <p class="categories__item-info">Книги про мир бизнеса</p>
+              </div>
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide categories__item">
+                  <img class="categories__item-img" src="img/categories-img-2.png" alt="Бизнес & Финансы">
+                  <h3 class="categories__item-title">Самомотивация</h3>
+                  <p class="categories__item-info">Книги о мотивации</p>
+              </div>
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide categories__item">
+                  <img class="categories__item-img" src="img/categories-img-3.png" alt="Бизнес & Финансы">
+                  <h3 class="categories__item-title">Романы Теленовеллы</h3>
+                  <p class="categories__item-info">Книги с крутыми историями</p>
+              </div>
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide categories__item">
+                  <img class="categories__item-img" src="img/categories-img-4.png" alt="Бизнес & Финансы">
+                  <h3 class="categories__item-title">Навыки будущего</h3>
+                  <p class="categories__item-info">Книги для самоподготовки
+                </p>
+              </div>
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide categories__item">
+                  <img class="categories__item-img" src="img/categories-img-1.png" alt="Бизнес & Финансы">
+                  <h3 class="categories__item-title">Бизнес & Финансы</h3>
+                  <p class="categories__item-info">Книги про мир бизнеса</p>
+              </div>
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide categories__item">
+                  <img class="categories__item-img" src="img/categories-img-2.png" alt="Бизнес & Финансы">
+                  <h3 class="categories__item-title">Самомотивация</h3>
+                  <p class="categories__item-info">Книги о мотивации</p>
+              </div>
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide categories__item">
+                  <img class="categories__item-img" src="img/categories-img-3.png" alt="Бизнес & Финансы">
+                  <h3 class="categories__item-title">Романы Теленовеллы</h3>
+                  <p class="categories__item-info">Книги с крутыми историями</p>
+              </div>
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide categories__item">
+                  <img class="categories__item-img" src="img/categories-img-4.png" alt="Бизнес & Финансы">
+                  <ph3 class="categories__item-title">Романы Теленовеллы</ph3>
+                  <p class="categories__item-info">Книги с крутыми историями</p>
+              </div>
+              <!-- /.swiper-slide -->
+              
+              <!-- /.slides -->
             </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.categories -->
-        <section class="unpublished"></section>
-        <!-- /.unpublished -->
-        <section class="autor-history"></section>
-        <!-- /.autor-history -->
-        <section class="partners"></section>
-        <!-- /.partners -->
-        <section class="blog"></section>
-        <!-- /.blog -->
-        <section class="registration"></section>
-        <!-- /.registration -->
+            <!-- /.swiper-wrapper -->
+
+            <!-- Navigation buttons -->
+            <div class="categories__swiper-button categories__swiper-button--prev"><img src="img/svg/left-arrow.svg" alt="Слайд влево"></div>
+            <div class="categories__swiper-button categories__swiper-button--next"><img src="img/svg/right-arrow.svg" alt="Слайд вправо"></div>
+            <!-- /.navigation buttons -->
+          </div>
+          <!-- /.swiper -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.categories -->
+      <section class="unreleased">
+
+      </section>
+      <!-- /.unreleased -->
+      <section class="autor-history"></section>
+      <!-- /.autor-history -->
+      <section class="partners"></section>
+      <!-- /.partners -->
+      <section class="blog"></section>
+      <!-- /.blog -->
+      <section class="registration"></section>
+      <!-- /.registration -->
     </main>
     <!-- /.Main -->
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <nav class="footer-nav"></nav>
-            <!-- /.footer-nav -->
-        </div>
-        <!-- /.footer-container -->
+      <div class="container">
+        <nav class="footer-nav"></nav>
+        <!-- /.footer-nav -->
+      </div>
+      <!-- /.footer-container -->
     </footer>
     <!-- /.footer -->
-    <a href="#" class="link-to-top"><img src="img/svg/up-arrow.svg" alt="Стрелка наверх"></a>
+    <a href="#" class="link-to-top"
+      ><img src="img/svg/up-arrow.svg" alt="Стрелка наверх"
+    /></a>
 
     <!-- Modals -->
     <div class="modal">
-        <div class="modal__overlay"></div>
-        <!-- /.modal__overlay -->
-        <!-- purchase-modal -->
-        <div class="purchase-modal">
-            <button class="purchase-modal__close">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <!-- purchase-modal -->
+      <div class="purchase-modal">
+        <button class="purchase-modal__close">
           <img src="img/svg/close.svg" alt="Close" />
         </button>
-            <h3 class="purchase-modal__title">Купить сейчас</h3>
-            <form action="send.php" method="POST" class="purchase-form validate-form" name="purchase-form">
-                <input class="purchase-form__input" type="text" placeholder="Ваше полное имя*" name="name" required minlength="2" />
-                <input class="purchase-form__input mask-phone" type="tel" placeholder="Номер телефона*" name="phone" required />
-                <input class="purchase-form__input" type="email" placeholder="Email*" name="email" required />
-                <textarea class="purchase-form__message" placeholder="Ваше сообщение" name="message"></textarea>
-                <fieldset class="purchase-modal__footer">
-                    <input class="purchase-modal__submit" type="submit" value="Отправить" />
-                    <p>* Обязательные поля</p>
-                </fieldset>
-            </form>
-            <!-- /.purchase-form -->
-        </div>
-        <!-- /.purchase-modal -->
+        <h3 class="purchase-modal__title">Купить сейчас</h3>
+        <form
+          action="send.php"
+          method="POST"
+          class="purchase-form validate-form"
+          name="purchase-form"
+        >
+          <input
+            class="purchase-form__input"
+            type="text"
+            placeholder="Ваше полное имя*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            class="purchase-form__input mask-phone"
+            type="tel"
+            placeholder="Номер телефона*"
+            name="phone"
+            required
+          />
+          <input
+            class="purchase-form__input"
+            type="email"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea
+            class="purchase-form__message"
+            placeholder="Ваше сообщение"
+            name="message"
+          ></textarea>
+          <fieldset class="purchase-modal__footer">
+            <input
+              class="purchase-modal__submit"
+              type="submit"
+              value="Отправить"
+            />
+            <p>* Обязательные поля</p>
+          </fieldset>
+        </form>
+        <!-- /.purchase-form -->
+      </div>
+      <!-- /.purchase-modal -->
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.inputmask.min.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

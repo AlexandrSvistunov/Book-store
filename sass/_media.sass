@@ -1,7 +1,9 @@
 /******* Media **********/
-@media (min-width: 1440px)
+@media (min-width: 1441px)
   .container
-    width: 1440px
+    width: 1140px
+
+ 
  
 @media (max-width: 1430px)
   .recommended
@@ -84,6 +86,13 @@
 
 @media (max-width: 1130px)
 
+  .categories
+    &__item
+      &-title
+        font-size: 18px
+      &-info
+        font-size: 14px
+
 
 
 /********** Interaktive ***********/
@@ -121,7 +130,7 @@
       flex-wrap: wrap
 
     &__info
-      margin-bottom: 36px
+      margin-bottom: 34px
       &-text
         text-align: justify
       &-buttons
@@ -144,8 +153,23 @@
     &__button
       grid-column: 1/3
 
+.categories
+    &__item
+      &-title
+        font-size: 16px
+        line-height: 20px
+        font-weight: 700
+      &-info
+        font-size: 12px      
+
  
 @media (max-width: 768px)
+
+  .categories
+    &__item
+      min-height: 250px
+      &-img
+        margin-bottom: 20px
 
   
 
@@ -194,6 +218,35 @@
             display: block
             margin: auto
 
+  .categories
+
+    .swiper
+      min-height: 240px
+
+    .container
+      padding-top: 53px
+
+    &__item
+      padding-top: 20px
+      min-height: 182px
+      padding-bottom: 20px
+      
+
+      &-img
+        width: 36px
+        height: 36px
+        margin-bottom: 16px
+
+      &-title
+        line-height: 20px
+        font-weight: 700
+        margin-bottom: 8px
+
+      &-info
+        font-size: 12px
+
+    
+     
 @media (max-width: 660px)
 
  
@@ -221,6 +274,31 @@
 
     &__button
       grid-column: 1/2
+
+
+  .categories
+    .swiper
+      &-wrapper
+        display: grid
+        grid-template-columns: repeat(4,auto)
+        grid-row-gap: 10px
+
+    &__swiper
+      &-button
+        top: auto
+        bottom: -99px
+        width: 48px
+        height: 48px
+
+        img
+          width: 15px
+          height: 16px
+
+        &--next
+          right: 92px
+        &--prev
+          left: 92px
+        
   
 @media (max-width: 576px)
 
@@ -297,6 +375,7 @@
 
   .product-cards
     padding-top: 60px
+    margin-bottom: 58px
 
     .container
       max-width: 89%
@@ -363,9 +442,8 @@
 
     &__button
       padding: 20px 0
-    
 
-
+  
 
 @media (max-width: 400px)
   .product-card
@@ -376,6 +454,8 @@
       margin-bottom: 2px
       &:nth-last-child(2)
         margin-bottom: 31px
+
+  
             
 @media (max-width: 320px)
   

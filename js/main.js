@@ -60,7 +60,7 @@ $(document).ready(function() {
                     minlength: "Ваше имя содержит менее 2 символов"
                 },
                 phone: {
-                    required: "Введитн Ваш номер телефона",
+                    required: "Введите Ваш номер телефона",
                     minlength: "Должно быть не менее 10 цифр"
                 },
                 email: {
@@ -88,5 +88,100 @@ $(document).ready(function() {
             checkMaskPhone: true,
         }
     });
+
+
+    // ****************Подключаем 1-й слайдер*************
+
+    const categoriesSwiper = new Swiper(".categories__slider", {
+        // Optional parameters
+
+        loop: false,
+        // autoHeight: true,
+        // Navigation arrows
+        navigation: {
+            nextEl: ".categories__swiper-button--next",
+            prevEl: ".categories__swiper-button--prev",
+        },
+
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+        },
+
+
+
+
+        slidesPerView: 4, // Количество слайдов
+
+        spaceBetween: 26, // Отступы между слайдами
+
+        // Адаптив
+        breakpoints: {
+            300: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                grid: {
+                    rows: 2,
+                },
+            },
+
+            400: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                grid: {
+                    rows: 2,
+                }
+            },
+
+            640: {
+                slidesPerView: 3,
+            },
+
+            992: {
+                slidesPerView: 3,
+            },
+
+            1300: {
+                slidesPerView: 3,
+            },
+
+            1440: {
+                slidesPerView: 4,
+            },
+
+        },
+
+    });
+
+
+    // **************Подключаем 2-й слайдер*************
+
+    const reviewsSwiper = new Swiper(".unreleased-slider", {
+        // Optional parameters
+
+        loop: false,
+
+        // // If we need pagination
+        // pagination: {
+        //   el: '.swiper-pagination',
+        // },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+        },
+
+        //  And if we need scrollbar
+        //  scrollbar: {
+        //    el: '.swiper-scrollbar',
+        //  },
+    });
+
 
 });
