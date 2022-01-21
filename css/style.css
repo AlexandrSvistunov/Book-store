@@ -112,6 +112,7 @@ button {
   position: fixed;
   top: 85%;
   right: 4%;
+  z-index: 99;
 }
 .link-to-top img {
   width: 40px;
@@ -433,6 +434,9 @@ main {
 }
 
 /********** Categories ***********/
+.categories {
+  margin-bottom: 40px;
+}
 .categories .container {
   padding-top: 60px;
   border-top: 1px solid #ECEEF2;
@@ -500,6 +504,60 @@ main {
 }
 
 /********** Unreleased ***********/
+.unreleased {
+  background-color: #183B56;
+  padding-top: 65px;
+  padding-bottom: 79px;
+  position: relative;
+}
+.unreleased .swiper {
+  position: static;
+}
+.unreleased .swiper-button-disabled {
+  border: 2px solid #5A7184;
+}
+.unreleased .swiper-button-disabled path {
+  fill: #5A7184;
+}
+.unreleased__title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  margin-bottom: 65px;
+}
+.unreleased__item-img {
+  -o-object-position: -1px -3px;
+     object-position: -1px -3px;
+}
+.unreleased__img-wrapper {
+  height: 298px;
+  max-width: 204px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.unreleased__swiper-button {
+  top: 15.9%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  z-index: 99;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #FFFFFF;
+}
+.unreleased__swiper-button--next {
+  right: 149px;
+}
+.unreleased__swiper-button--prev {
+  right: 227px;
+}
+
 /****************Footer***************/
 /********** Footer-top***********/
 /**********Thankyou***********/

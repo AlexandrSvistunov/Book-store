@@ -156,20 +156,15 @@ $(document).ready(function() {
 
     // **************Подключаем 2-й слайдер*************
 
-    const reviewsSwiper = new Swiper(".unreleased-slider", {
+    const reviewsSwiper = new Swiper(".unreleased__slider", {
         // Optional parameters
 
         loop: false,
 
-        // // If we need pagination
-        // pagination: {
-        //   el: '.swiper-pagination',
-        // },
-
         // Navigation arrows
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".unreleased__swiper-button--next",
+            prevEl: ".unreleased__swiper-button--prev",
         },
 
         keyboard: {
@@ -177,10 +172,9 @@ $(document).ready(function() {
             onlyInViewport: false,
         },
 
-        //  And if we need scrollbar
-        //  scrollbar: {
-        //    el: '.swiper-scrollbar',
-        //  },
+        slidesPerView: 5, // Количество слайдов
+        spaceBetween: 30, // Отступы между слайдами
+
     });
 
 
