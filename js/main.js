@@ -175,6 +175,55 @@ $(document).ready(function() {
         slidesPerView: 5, // Количество слайдов
         spaceBetween: 30, // Отступы между слайдами
 
+        // Адаптив
+        breakpoints: {
+            200: {
+                slidesPerView: 1,
+
+            },
+
+
+            300: {
+                slidesPerView: 1,
+                centeredSlides: true,
+                slidesPerGroup: 1,
+            },
+
+            500: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+
+            700: {
+                slidesPerView: 3,
+            },
+
+            992: {
+                slidesPerView: 3,
+            },
+
+            1200: {
+                slidesPerView: 4,
+            },
+
+            1300: {
+                slidesPerView: 4,
+            },
+
+            1440: {
+                slidesPerView: 5,
+            },
+
+        },
+
+
+    });
+
+
+    // Меняем цвет SVG
+
+    $('.product-card__like').click(function() {
+        $(this).toggleClass('product-card__like--active');
     });
 
 
