@@ -9,6 +9,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Ehya - Книжный магазин</title>
 </head>
@@ -435,115 +436,274 @@
         <div class="container">
           <h2 class="unreleased__title">Неизданные книги</h2>
           <div class="swiper unreleased__slider">
-        
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide unreleased__item"><div class="unreleased__img-wrapper"><img class="unreleased__item-img" src="/img/unreleased-img-1.png" alt="Обложка книги"></div></div>
-              <div class="swiper-slide unreleased__item"><div class="unreleased__img-wrapper"><img class="unreleased__item-img" src="/img/unreleased-img-2.png" alt="Обложка книги"></div></div>
-              <div class="swiper-slide unreleased__item"><div class="unreleased__img-wrapper"><img class="unreleased__item-img" src="/img/unreleased-img-3.png" alt="Обложка книги"></div></div>
-              <div class="swiper-slide unreleased__item"><div class="unreleased__img-wrapper"><img class="unreleased__item-img" src="/img/unreleased-img-4.png" alt="Обложка книги"></div></div>
-              <div class="swiper-slide unreleased__item"><div class="unreleased__img-wrapper"><img class="unreleased__item-img" src="/img/unreleased-img-5.png" alt="Обложка книги"></div></div>
-              <div class="swiper-slide unreleased__item"><div class="unreleased__img-wrapper"><img class="unreleased__item-img" src="/img/unreleased-img-1.png" alt="Обложка книги"></div></div>
-              <div class="swiper-slide unreleased__item"><div class="unreleased__img-wrapper"><img class="unreleased__item-img" src="/img/unreleased-img-2.png" alt="Обложка книги"></div></div>
-              <div class="swiper-slide unreleased__item"><div class="unreleased__img-wrapper"><img class="unreleased__item-img" src="/img/unreleased-img-3.png" alt="Обложка книги"></div></div>
-              
+              <div class="swiper-slide unreleased__item">
+                <div class="unreleased__img-wrapper">
+                  <img
+                    class="unreleased__item-img"
+                    src="img/unreleased-img-1.png"
+                    alt="Обложка книги"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide unreleased__item">
+                <div class="unreleased__img-wrapper">
+                  <img
+                    class="unreleased__item-img"
+                    src="img/unreleased-img-2.png"
+                    alt="Обложка книги"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide unreleased__item">
+                <div class="unreleased__img-wrapper">
+                  <img
+                    class="unreleased__item-img"
+                    src="img/unreleased-img-3.png"
+                    alt="Обложка книги"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide unreleased__item">
+                <div class="unreleased__img-wrapper">
+                  <img
+                    class="unreleased__item-img"
+                    src="img/unreleased-img-4.png"
+                    alt="Обложка книги"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide unreleased__item">
+                <div class="unreleased__img-wrapper">
+                  <img
+                    class="unreleased__item-img"
+                    src="img/unreleased-img-5.png"
+                    alt="Обложка книги"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide unreleased__item">
+                <div class="unreleased__img-wrapper">
+                  <img
+                    class="unreleased__item-img"
+                    src="img/unreleased-img-1.png"
+                    alt="Обложка книги"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide unreleased__item">
+                <div class="unreleased__img-wrapper">
+                  <img
+                    class="unreleased__item-img"
+                    src="img/unreleased-img-2.png"
+                    alt="Обложка книги"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide unreleased__item">
+                <div class="unreleased__img-wrapper">
+                  <img
+                    class="unreleased__item-img"
+                    src="img/unreleased-img-3.png"
+                    alt="Обложка книги"
+                  />
+                </div>
+              </div>
             </div>
 
-            <button class="unreleased__swiper-button unreleased__swiper-button--prev"><svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.31696 12.9375C8.62946 12.625 8.59821 12.1562 8.31696 11.8438L4.53571 8.25H13.5357C13.942 8.25 14.2857 7.9375 14.2857 7.5V6.5C14.2857 6.09375 13.942 5.75 13.5357 5.75H4.53571L8.31696 2.1875C8.59821 1.875 8.62946 1.40625 8.31696 1.09375L7.62946 0.40625C7.34821 0.125 6.84821 0.125 6.56696 0.40625L0.504456 6.5C0.191956 6.78125 0.191956 7.25 0.504456 7.53125L6.56696 13.625C6.84821 13.9062 7.31696 13.9062 7.62946 13.625L8.31696 12.9375Z" fill="#ffffff"/>
-              </svg></button>
-            <button class="unreleased__swiper-button unreleased__swiper-button--next"><svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.22321 1.09375C5.91071 1.40625 5.94196 1.875 6.22321 2.1875L10.0045 5.75H1.03571C0.598206 5.75 0.285706 6.09375 0.285706 6.5V7.5C0.285706 7.9375 0.598206 8.25 1.03571 8.25H10.0045L6.22321 11.8438C5.94196 12.1562 5.94196 12.625 6.22321 12.9375L6.91071 13.625C7.22321 13.9062 7.69196 13.9062 7.97321 13.625L14.067 7.53125C14.3482 7.25 14.3482 6.78125 14.067 6.46875L7.97321 0.40625C7.69196 0.125 7.22321 0.125 6.91071 0.40625L6.22321 1.09375Z" fill="white"/>
-              </svg></button>
+            <button
+              class="unreleased__swiper-button unreleased__swiper-button--prev"
+            >
+              <svg
+                width="15"
+                height="14"
+                viewBox="0 0 15 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.31696 12.9375C8.62946 12.625 8.59821 12.1562 8.31696 11.8438L4.53571 8.25H13.5357C13.942 8.25 14.2857 7.9375 14.2857 7.5V6.5C14.2857 6.09375 13.942 5.75 13.5357 5.75H4.53571L8.31696 2.1875C8.59821 1.875 8.62946 1.40625 8.31696 1.09375L7.62946 0.40625C7.34821 0.125 6.84821 0.125 6.56696 0.40625L0.504456 6.5C0.191956 6.78125 0.191956 7.25 0.504456 7.53125L6.56696 13.625C6.84821 13.9062 7.31696 13.9062 7.62946 13.625L8.31696 12.9375Z"
+                  fill="#ffffff"
+                />
+              </svg>
+            </button>
+            <button
+              class="unreleased__swiper-button unreleased__swiper-button--next"
+            >
+              <svg
+                width="15"
+                height="14"
+                viewBox="0 0 15 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.22321 1.09375C5.91071 1.40625 5.94196 1.875 6.22321 2.1875L10.0045 5.75H1.03571C0.598206 5.75 0.285706 6.09375 0.285706 6.5V7.5C0.285706 7.9375 0.598206 8.25 1.03571 8.25H10.0045L6.22321 11.8438C5.94196 12.1562 5.94196 12.625 6.22321 12.9375L6.91071 13.625C7.22321 13.9062 7.69196 13.9062 7.97321 13.625L14.067 7.53125C14.3482 7.25 14.3482 6.78125 14.067 6.46875L7.97321 0.40625C7.69196 0.125 7.22321 0.125 6.91071 0.40625L6.22321 1.09375Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
           </div>
           <!-- ./ swiper container -->
         </div>
         <!-- /.container -->
       </section>
       <!-- /.unreleased -->
-      <section class="autor-history"></section>
-      <!-- /.autor-history -->
-      <section class="partners"></section>
-      <!-- /.partners -->
-      <section class="blog"></section>
-      <!-- /.blog -->
-      <section class="registration"></section>
-      <!-- /.registration -->
+      <section class="history">
+        <div class="container">
+          <div class="history__header">
+            <h2 class="history__title">История Автора</h2>
+            <p class="history__info">
+              Это раздел авторского рассказа. Каждую неделю мы стараемся
+              рассказать вам историю писателя. Расскажем всем о&nbsp;закулисье
+              их книг.
+            </p>
+          </div>
+          <!-- /.history__header -->
+          <div class="history__autor">
+            <div class="video video--big" id="player">
+              <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><button class="video-play video-play--big">
+                <img src="img/svg/play-big.svg" alt="Кнопка воспроизведения" />
+              </button></a>
+              
+            </div>
+
+            <div class="history__autor-items">
+              <div class="history__autor-item">
+                <div class="video-container video-container--left">
+                  <a  data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><button class="video-play">
+                    <img src="img/svg/play.svg" alt="Кнопка воспроизведения" />
+                  </button></a>
+                  
+                </div>
+                <div class="history__autor-info">
+                  <div class="history__autor-info-text">
+                    <p class="history__autor-name">Emelda Scandroot</p>
+                    <p class="history__autor-books">Author of Books Tittle</p>
+                  </div>
+                  <span class="history__autor-like"
+                    ><img src="img/svg/like.svg" alt="Отметь это видео"
+                  /></span>
+                            </div>
+                            <!-- /.history__autor-info -->
+                        </div>
+                        <!-- /.history__autor-item -->
+                        <div class="history__autor-item">
+                            <div class="video-container video-container--center">
+                                <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><button class="video-play">
+                                <img src="img/svg/play.svg" alt="Кнопка воспроизведения" />
+                              </button></a>
+
+                            </div>
+                            <div class="history__autor-info">
+                                <div class="history__autor-info-text">
+                                    <p class="history__autor-name">Mar Rueda</p>
+                                    <p class="history__autor-books">Author of Books Tittle</p>
+                                </div>
+                                <span class="history__autor-like"><img src="img/svg/like.svg" alt="Отметь это видео"
+                  /></span>
+                            </div>
+                            <!-- /.history__autor-info -->
+                        </div>
+                        <!-- /.history__autor-item -->
+                        <div class="history__autor-item">
+                            <div class="video-container video-container--right">
+                                <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><button class="video-play">
+                                <img src="img/svg/play.svg" alt="Кнопка воспроизведения" />
+                              </button></a>
+
+                            </div>
+                            <div class="history__autor-info">
+                                <div class="history__autor-info-text">
+                                    <p class="history__autor-name">Nembo Lukeni</p>
+                                    <p class="history__autor-books">Author of Books Tittle</p>
+                                </div>
+                                <span class="history__autor-like"><img src="img/svg/like.svg" alt="Отметь это видео"
+                  /></span>
+                            </div>
+                            <!-- /.history__autor-info -->
+                        </div>
+                        <!-- /.history__autor-item -->
+                    </div>
+                    <!-- /.history__autor-items -->
+                </div>
+                <!-- /.history__autor -->
+            </div>
+        </section>
+        <!-- /.history -->
+        <section class="partners">
+            <div class="container">
+                <h2 class="partners__title">Некоторые из издателей, с&nbsp;которыми мы сотрудничали
+                </h2>
+
+                <ul class="partners__list">
+                    <li class="partners__list-item"><img src="img/partners-img-1.png" alt="Наши парттнёры"></li>
+                    <li class="partners__list-item"><img src="img/partners-img-2.png" alt="Наши парттнёры"></li>
+                    <li class="partners__list-item"><img src="img/partners-img-3.png" alt="Наши парттнёры"></li>
+                    <li class="partners__list-item"><img src="img/partners-img-4.png" alt="Наши парттнёры"></li>
+                    <li class="partners__list-item"><img src="img/partners-img-5.png" alt="Наши парттнёры"></li>
+                    <li class="partners__list-item"><img src="img/partners-img-6.png" alt="Наши парттнёры"></li>
+                    <li class="partners__list-item"><img src="img/partners-img-2.png" alt="Наши парттнёры"></li>
+                    <li class="partners__list-item"><img src="img/partners-img-5.png" alt="Наши парттнёры"></li>
+                    <li class="partners__list-item"><img src="img/partners-img-1.png" alt="Наши парттнёры"></li>
+                    <li class="partners__list-item"><img src="img/partners-img-6.png" alt="Наши парттнёры"></li>
+                    <li class="partners__list-item"><img src="img/partners-img-3.png" alt="Наши парттнёры"></li>
+                    <li class="partners__list-item"><img src="img/partners-img-4.png" alt="Наши парттнёры"></li>
+
+                </ul>
+                <!-- /.partners__list -->
+            </div>
+            <!-- /.partners -->
+        </section>
+        <!-- /.partners -->
+        <section class="blog"></section>
+        <!-- /.blog -->
+        <section class="registration"></section>
+        <!-- /.registration -->
     </main>
     <!-- /.Main -->
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <nav class="footer-nav"></nav>
-        <!-- /.footer-nav -->
-      </div>
-      <!-- /.footer-container -->
+        <div class="container">
+            <nav class="footer-nav"></nav>
+            <!-- /.footer-nav -->
+        </div>
+        <!-- /.footer-container -->
     </footer>
     <!-- /.footer -->
-    <a href="#" class="link-to-top"
-      ><img src="img/svg/up-arrow.svg" alt="Стрелка наверх"
-    /></a>
+    <a href="#" class="link-to-top"><img src="img/svg/up-arrow.svg" alt="Стрелка наверх" /></a>
 
     <!-- Modals -->
     <div class="modal">
-      <div class="modal__overlay"></div>
-      <!-- /.modal__overlay -->
-      <!-- purchase-modal -->
-      <div class="purchase-modal">
-        <button class="purchase-modal__close">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <!-- purchase-modal -->
+        <div class="purchase-modal">
+            <button class="purchase-modal__close">
           <img src="img/svg/close.svg" alt="Close" />
         </button>
-        <h3 class="purchase-modal__title">Купить сейчас</h3>
-        <form
-          action="send.php"
-          method="POST"
-          class="purchase-form validate-form"
-          name="purchase-form"
-        >
-          <input
-            class="purchase-form__input"
-            type="text"
-            placeholder="Ваше полное имя*"
-            name="name"
-            required
-            minlength="2"
-          />
-          <input
-            class="purchase-form__input mask-phone"
-            type="tel"
-            placeholder="Номер телефона*"
-            name="phone"
-            required
-          />
-          <input
-            class="purchase-form__input"
-            type="email"
-            placeholder="Email*"
-            name="email"
-            required
-          />
-          <textarea
-            class="purchase-form__message"
-            placeholder="Ваше сообщение"
-            name="message"
-          ></textarea>
-          <fieldset class="purchase-modal__footer">
-            <input
-              class="purchase-modal__submit"
-              type="submit"
-              value="Отправить"
-            />
-            <p>* Обязательные поля</p>
-          </fieldset>
-        </form>
-        <!-- /.purchase-form -->
-      </div>
-      <!-- /.purchase-modal -->
+            <h3 class="purchase-modal__title">Купить сейчас</h3>
+            <form action="send.php" method="POST" class="purchase-form validate-form" name="purchase-form">
+                <input class="purchase-form__input" type="text" placeholder="Ваше полное имя*" name="name" required minlength="2" />
+                <input class="purchase-form__input mask-phone" type="tel" placeholder="Номер телефона*" name="phone" required />
+                <input class="purchase-form__input" type="email" placeholder="Email*" name="email" required />
+                <textarea class="purchase-form__message" placeholder="Ваше сообщение" name="message"></textarea>
+                <fieldset class="purchase-modal__footer">
+                    <input class="purchase-modal__submit" type="submit" value="Отправить" />
+                    <p>* Обязательные поля</p>
+                </fieldset>
+            </form>
+            <!-- /.purchase-form -->
+        </div>
+        <!-- /.purchase-modal -->
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>

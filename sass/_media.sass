@@ -72,6 +72,13 @@
     &__box
       grid-template-columns: repeat(2, 1fr)
 
+  .history
+    padding-right: 0
+    padding-left: 0
+
+    &__header
+      padding-right: 0
+
 
 
 @media (max-width: 1140px)
@@ -158,8 +165,26 @@
           line-height: 20px
           font-weight: 700
         &-info
-          font-size: 12px      
+          font-size: 12px
 
+  .history
+    &__title
+      font-size: 32px
+
+    .video-container
+      height: 150px
+     
+
+    &__autor-name
+      font-size: 18px
+
+    .video--big
+
+  .partners
+    &__list
+      grid-template-columns: repeat(3, 1fr)
+      grid-template-rows: repeat(3, 1fr)
+    
  
 @media (max-width: 768px)
 
@@ -179,6 +204,15 @@
   .product-card
     width: 70%
     margin: 0 auto
+
+  .history
+    &__title
+      font-size: 28px
+
+    .video-play--big
+      height: 80px
+      width: 80px
+
 
 /********** Мобильное меню ***********/ 
 @media (max-width: 700px)
@@ -245,6 +279,19 @@
       &-info
         font-size: 12px
 
+
+  .history
+    &__header
+      flex-wrap: wrap
+      text-align: center
+
+    &__title
+      width: 100%
+      margin-bottom: 24px
+
+    &__info
+      max-width: 100%
+  
     
      
 @media (max-width: 660px)
@@ -278,9 +325,6 @@
       margin: 0 auto
 
 
-  
-
- 
 
 @media (max-width: 630px)
   .product-card
@@ -330,7 +374,20 @@
         &--prev
           left: 92px
         
-  
+  .history
+    &__autor-items
+      grid-template-columns: repeat(2, 1fr)
+      grid-column-gap: 20px
+
+    &__autor-item
+      &:last-child
+        display: none
+
+    .video--big
+      margin-bottom: 20px
+
+
+
 @media (max-width: 576px)
 
 
@@ -345,7 +402,65 @@
     &-form
       min-width: 70vw
 
-    
+  .history
+    padding-top: 47px
+
+    .container
+      max-width: 94.1%
+
+    &__info
+      padding: 0 10px
+      line-height: 25px
+
+    &__title
+      margin-bottom: 25px
+
+    &__header
+      margin-bottom: 35px
+
+    .video--big
+      height: 210px
+      background-image: url(../img/video-img-1-mobile.jpg)
+
+    .video-container
+      height: 137px
+      margin-bottom: 17px
+
+    .video-play--big
+      width: 56px
+      height: 56px
+      img
+        width: 17px
+        height: 22px
+
+    .video-play
+      img
+        width: 21px
+        height: 27px
+
+    &__autor-info
+      flex-direction: column
+      align-items: center
+
+      &-text
+        text-align: center
+        
+
+    &__autor
+      &-name
+        font-size: 16px
+        margin-bottom: 10px
+
+      &-books
+        font-size: 12px
+        margin-bottom: 8px
+
+      &-like
+        img
+          width: 10px
+          height: 14px
+
+
 
 @media (max-width: 490px)
 
@@ -474,7 +589,31 @@
     &__button
       padding: 20px 0
 
+@media (max-width: 420px)
+  .history
+    margin-bottom: 2px
+
+  .partners
+    padding-top: 37px
+    padding-bottom: 57px
+    
+    &__title
+      margin-bottom: 30px 
+
+    &__list
+      grid-template-columns: repeat(2, 1fr)
+      padding: 0 20px
+      grid-row-gap: 22px
+
+      &-item
+        img
+          width: 87px
+
+        &:nth-child(n+7)
+          display: none
+        
   
+
 
 @media (max-width: 400px)
   .product-card

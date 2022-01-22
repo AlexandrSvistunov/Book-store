@@ -227,4 +227,22 @@ $(document).ready(function() {
     });
 
 
+
+    // Подключаем видео
+    // var player;
+
+    // $('.video-play').on('click', function onYouTubeIframeAPIReady() {
+    //     player = new YT.Player('player', {
+    //         height: '380',
+    //         width: '100%',
+    //         videoId: 'vNvJyUW9MKE',
+    //         events: {
+    //             'onReady': videoPlay,
+    //         }
+    //     });
+    // })
+
+    // function videoPlay(event) {
+    //     event.target.playVideo();
+    // }
 });

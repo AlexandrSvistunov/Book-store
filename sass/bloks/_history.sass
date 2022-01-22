@@ -1,0 +1,98 @@
+/**********History***********/
+.history
+  padding: 106px 85px 40px
+  margin-bottom: 61px
+
+  &__header
+    display: flex
+    justify-content: space-between
+    margin-bottom: 18px
+    padding-right: 60px
+
+  &__title
+    font-family: Roboto
+    font-weight: 700
+    font-size: 48px
+    letter-spacing: 0.2px
+    color: $title-color
+
+  &__info
+    max-width: 357px  
+
+    font-family: Open Sans
+    font-weight: 400
+    font-size: 18px
+    line-height: 32px
+    color: $text-color
+
+  &__autor
+
+    &-items
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      grid-column-gap: 30px
+
+    &-info
+      display: flex
+      justify-content: space-between
+
+    &-name
+      font-family: Roboto
+      font-weight: 500
+      font-size: 22px
+      letter-spacing: 0.2px
+      color: $title-color
+      margin-bottom: 16px
+
+    &-books
+      ont-family: Open Sans
+      font-weight: normal
+      font-size: 16px
+      color: $text-color
+
+    &-like
+
+.video, .video-container
+  position: relative
+
+.video
+  &--big
+    height: 380px
+    width: 100%
+    background-image: url(../img/video-img-1.jpg)
+    background-position: center
+    background-size: cover
+    margin-bottom: 30px
+
+  &-container
+    height: 200px
+    margin-bottom: 25px
+    background-position: center
+    background-size: cover
+
+    &--left
+      background-image: url(../img/video-img-2.jpg)
+    &--center
+      background-image: url(../img/video-img-3.jpg)
+    &--right
+      background-image: url(../img/video-img-4.jpg)
+
+.video-play
+  position: absolute
+  top: 50%
+  transform: translate(-50%, -50%)
+  left: 50%
+  cursor: pointer
+  z-index: 99
+
+  &--big
+    height: 100px
+    width: 100px
+    border-radius: 50%
+    background-color: #ffffff
+    display: flex
+    align-items: center
+    justify-content: center
+
+ 
+

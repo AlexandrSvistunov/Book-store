@@ -260,7 +260,7 @@ main {
 .product__img-bg {
   background-color: rgba(179, 186, 197, 0.1);
   width: 42.8%;
-  height: 40.3vw;
+  height: 580px;
   position: relative;
   flex-shrink: 0;
 }
@@ -408,7 +408,7 @@ main {
   fill: #959EAD;
 }
 .product-card__like--active path {
-  fill: #c71134;
+  fill: #ee0534;
 }
 
 .best__title {
@@ -562,6 +562,124 @@ main {
 }
 .unreleased__swiper-button--prev {
   right: 227px;
+}
+
+/**********History***********/
+.history {
+  padding: 106px 85px 40px;
+  margin-bottom: 61px;
+}
+.history__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  padding-right: 60px;
+}
+.history__title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+}
+.history__info {
+  max-width: 357px;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #5A7184;
+}
+.history__autor-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+.history__autor-info {
+  display: flex;
+  justify-content: space-between;
+}
+.history__autor-name {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin-bottom: 16px;
+}
+.history__autor-books {
+  ont-family: Open Sans;
+  font-weight: normal;
+  font-size: 16px;
+  color: #5A7184;
+}
+.video, .video-container {
+  position: relative;
+}
+
+.video--big {
+  height: 380px;
+  width: 100%;
+  background-image: url(../img/video-img-1.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+.video-container {
+  height: 200px;
+  margin-bottom: 25px;
+  background-position: center;
+  background-size: cover;
+}
+.video-container--left {
+  background-image: url(../img/video-img-2.jpg);
+}
+.video-container--center {
+  background-image: url(../img/video-img-3.jpg);
+}
+.video-container--right {
+  background-image: url(../img/video-img-4.jpg);
+}
+
+.video-play {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  cursor: pointer;
+  z-index: 99;
+}
+.video-play--big {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/********** Partners ***********/
+.partners {
+  background-color: #B3BAC5;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 82px;
+  padding-bottom: 100px;
+}
+.partners__title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.2px;
+  margin-bottom: 56px;
+  line-height: 30px;
+}
+.partners__list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 52px;
 }
 
 /****************Footer***************/
@@ -776,6 +894,14 @@ main {
   .recommended__box {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .history {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .history__header {
+    padding-right: 0;
+  }
 }
 @media (max-width: 1140px) {
   .product__info-leftbutton {
@@ -859,6 +985,20 @@ main {
   .categories__item-info {
     font-size: 12px;
   }
+
+  .history__title {
+    font-size: 32px;
+  }
+  .history .video-container {
+    height: 150px;
+  }
+  .history__autor-name {
+    font-size: 18px;
+  }
+  .partners__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 @media (max-width: 768px) {
   .categories__item {
@@ -876,6 +1016,14 @@ main {
   .product-card {
     width: 70%;
     margin: 0 auto;
+  }
+
+  .history__title {
+    font-size: 28px;
+  }
+  .history .video-play--big {
+    height: 80px;
+    width: 80px;
   }
 }
 /********** Мобильное меню ***********/ 
@@ -937,6 +1085,18 @@ main {
   }
   .categories__item-info {
     font-size: 12px;
+  }
+
+  .history__header {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .history__title {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .history__info {
+    max-width: 100%;
   }
 }
 @media (max-width: 660px) {
@@ -1013,6 +1173,17 @@ main {
   .categories__swiper-button--prev {
     left: 92px;
   }
+
+  .history__autor-items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+  }
+  .history__autor-item:last-child {
+    display: none;
+  }
+  .history .video--big {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 530px) {
   .purchase-modal {
@@ -1021,6 +1192,62 @@ main {
   }
   .purchase-form {
     min-width: 70vw;
+  }
+
+  .history {
+    padding-top: 47px;
+  }
+  .history .container {
+    max-width: 94.1%;
+  }
+  .history__info {
+    padding: 0 10px;
+    line-height: 25px;
+  }
+  .history__title {
+    margin-bottom: 25px;
+  }
+  .history__header {
+    margin-bottom: 35px;
+  }
+  .history .video--big {
+    height: 210px;
+    background-image: url(../img/video-img-1-mobile.jpg);
+  }
+  .history .video-container {
+    height: 137px;
+    margin-bottom: 17px;
+  }
+  .history .video-play--big {
+    width: 56px;
+    height: 56px;
+  }
+  .history .video-play--big img {
+    width: 17px;
+    height: 22px;
+  }
+  .history .video-play img {
+    width: 21px;
+    height: 27px;
+  }
+  .history__autor-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .history__autor-info-text {
+    text-align: center;
+  }
+  .history__autor-name {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .history__autor-books {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .history__autor-like img {
+    width: 10px;
+    height: 14px;
   }
 }
 @media (max-width: 490px) {
@@ -1155,6 +1382,30 @@ main {
   }
   .best__button {
     padding: 20px 0;
+  }
+}
+@media (max-width: 420px) {
+  .history {
+    margin-bottom: 2px;
+  }
+
+  .partners {
+    padding-top: 37px;
+    padding-bottom: 57px;
+  }
+  .partners__title {
+    margin-bottom: 30px;
+  }
+  .partners__list {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+    grid-row-gap: 22px;
+  }
+  .partners__list-item img {
+    width: 87px;
+  }
+  .partners__list-item:nth-child(n+7) {
+    display: none;
   }
 }
 @media (max-width: 400px) {
