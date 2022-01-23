@@ -226,7 +226,9 @@ $(document).ready(function() {
         $(this).toggleClass('product-card__like--active');
     });
 
-
+    $('.history__autor-like').click(function() {
+        $(this).toggleClass('history__autor-like--active');
+    });
 
     // Подключаем видео
     // var player;

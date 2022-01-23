@@ -9,7 +9,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Ehya - Книжный магазин</title>
 </head>
@@ -30,7 +30,7 @@
                         <a href="#books" class="header-nav__link">Книги</a>
                     </li>
                     <li class="header-nav__item">
-                        <a href="#" class="header-nav__link">Блог</a>
+                        <a href="#blog" class="header-nav__link">Блог</a>
                     </li>
                 </ul>
                 <!-- /.header-nav -->
@@ -563,73 +563,78 @@
           <!-- /.history__header -->
           <div class="history__autor">
             <div class="video video--big" id="player">
-              <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><button class="video-play video-play--big">
+              <a data-fancybox="video" data-caption="YouTube" href="https://www.youtube.com/watch?v=vNvJyUW9MKE"><span class="video-play video-play--big">
                 <img src="img/svg/play-big.svg" alt="Кнопка воспроизведения" />
-              </button></a>
-              
-            </div>
+              </span></a>
 
-            <div class="history__autor-items">
-              <div class="history__autor-item">
-                <div class="video-container video-container--left">
-                  <a  data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><button class="video-play">
+                            </div>
+
+                            <div class="history__autor-items">
+                                <div class="history__autor-item">
+                                    <div class="video-container video-container--left">
+                                        <a data-fancybox="video" data-caption="YouTube" href="https://www.youtube.com/watch?v=qIMGuSZbmFI"><span class="video-play">
                     <img src="img/svg/play.svg" alt="Кнопка воспроизведения" />
-                  </button></a>
-                  
-                </div>
-                <div class="history__autor-info">
-                  <div class="history__autor-info-text">
-                    <p class="history__autor-name">Emelda Scandroot</p>
-                    <p class="history__autor-books">Author of Books Tittle</p>
-                  </div>
-                  <span class="history__autor-like"
-                    ><img src="img/svg/like.svg" alt="Отметь это видео"
-                  /></span>
-                            </div>
-                            <!-- /.history__autor-info -->
-                        </div>
-                        <!-- /.history__autor-item -->
-                        <div class="history__autor-item">
-                            <div class="video-container video-container--center">
-                                <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><button class="video-play">
-                                <img src="img/svg/play.svg" alt="Кнопка воспроизведения" />
-                              </button></a>
+                  </span></a>
 
-                            </div>
-                            <div class="history__autor-info">
-                                <div class="history__autor-info-text">
-                                    <p class="history__autor-name">Mar Rueda</p>
-                                    <p class="history__autor-books">Author of Books Tittle</p>
+                                    </div>
+                                    <div class="history__autor-info">
+                                        <div class="history__autor-info-text">
+                                            <p class="history__autor-name">Emelda Scandroot</p>
+                                            <p class="history__autor-books">Author of Books Tittle</p>
+                                        </div>
+                                        <span><svg class="history__autor-like"  width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.0625 0.25H1.9375C0.988281 0.25 0.25 1.02344 0.25 1.9375V18.25L7 14.3125L13.75 18.25V1.9375C13.75 1.02344 12.9766 0.25 12.0625 0.25ZM12.0625 15.332L7 12.3789L1.9375 15.332V2.14844C1.9375 2.04297 2.00781 1.9375 2.14844 1.9375H11.8516C11.957 1.9375 12.0625 2.04297 12.0625 2.14844V15.332Z" fill="none"/>
+                    </svg>
+                    </span>
+                                    </div>
+                                    <!-- /.history__autor-info -->
                                 </div>
-                                <span class="history__autor-like"><img src="img/svg/like.svg" alt="Отметь это видео"
-                  /></span>
-                            </div>
-                            <!-- /.history__autor-info -->
-                        </div>
-                        <!-- /.history__autor-item -->
-                        <div class="history__autor-item">
-                            <div class="video-container video-container--right">
-                                <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><button class="video-play">
+                                <!-- /.history__autor-item -->
+                                <div class="history__autor-item">
+                                    <div class="video-container video-container--center">
+                                        <a data-fancybox="video" data-caption="YouTube" href="https://www.youtube.com/watch?v=LkU7oY5jksw"><span class="video-play">
                                 <img src="img/svg/play.svg" alt="Кнопка воспроизведения" />
-                              </button></a>
+                              </span></a>
 
-                            </div>
-                            <div class="history__autor-info">
-                                <div class="history__autor-info-text">
-                                    <p class="history__autor-name">Nembo Lukeni</p>
-                                    <p class="history__autor-books">Author of Books Tittle</p>
+                                    </div>
+                                    <div class="history__autor-info">
+                                        <div class="history__autor-info-text">
+                                            <p class="history__autor-name">Mar Rueda</p>
+                                            <p class="history__autor-books">Author of Books Tittle</p>
+                                        </div>
+                                        <span><svg class="history__autor-like"  width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12.0625 0.25H1.9375C0.988281 0.25 0.25 1.02344 0.25 1.9375V18.25L7 14.3125L13.75 18.25V1.9375C13.75 1.02344 12.9766 0.25 12.0625 0.25ZM12.0625 15.332L7 12.3789L1.9375 15.332V2.14844C1.9375 2.04297 2.00781 1.9375 2.14844 1.9375H11.8516C11.957 1.9375 12.0625 2.04297 12.0625 2.14844V15.332Z" fill="none"/>
+                                  </svg>
+                                  </span>
+                                    </div>
+                                    <!-- /.history__autor-info -->
                                 </div>
-                                <span class="history__autor-like"><img src="img/svg/like.svg" alt="Отметь это видео"
-                  /></span>
+                                <!-- /.history__autor-item -->
+                                <div class="history__autor-item">
+                                    <div class="video-container video-container--right">
+                                        <a data-fancybox="video" data-caption="YouTube" href="https://www.youtube.com/watch?v=4WILvbFxKh8"><span class="video-play">
+                                <img src="img/svg/play.svg" alt="Кнопка воспроизведения" />
+                              </span></a>
+
+                                    </div>
+                                    <div class="history__autor-info">
+                                        <div class="history__autor-info-text">
+                                            <p class="history__autor-name">Nembo Lukeni</p>
+                                            <p class="history__autor-books">Author of Books Tittle</p>
+                                        </div>
+                                        <span><svg class="history__autor-like"  width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12.0625 0.25H1.9375C0.988281 0.25 0.25 1.02344 0.25 1.9375V18.25L7 14.3125L13.75 18.25V1.9375C13.75 1.02344 12.9766 0.25 12.0625 0.25ZM12.0625 15.332L7 12.3789L1.9375 15.332V2.14844C1.9375 2.04297 2.00781 1.9375 2.14844 1.9375H11.8516C11.957 1.9375 12.0625 2.04297 12.0625 2.14844V15.332Z" fill="none"/>
+                                  </svg>
+                                  </span>
+                                    </div>
+                                    <!-- /.history__autor-info -->
+                                </div>
+                                <!-- /.history__autor-item -->
                             </div>
-                            <!-- /.history__autor-info -->
+                            <!-- /.history__autor-items -->
                         </div>
-                        <!-- /.history__autor-item -->
+                        <!-- /.history__autor -->
                     </div>
-                    <!-- /.history__autor-items -->
-                </div>
-                <!-- /.history__autor -->
-            </div>
         </section>
         <!-- /.history -->
         <section class="partners">
@@ -657,7 +662,56 @@
             <!-- /.partners -->
         </section>
         <!-- /.partners -->
-        <section class="blog"></section>
+        <section class="blog" id="blog">
+            <div class="container">
+                <div class="blog__header">
+                    <h2 class="blog__title">Ehya Блог</h2>
+                    <a href="#" class="blog__button">Все Блоги</a>
+                </div>
+                <div class="blog__content">
+                    <article class="blog__article-main ">
+                        <img class="blog__article-img blog__article-img--main" src="img/main-article-img.jpg" alt="Изображение в статье">
+                        <div class="blog__article-info blog__article-info--main">
+                            <h3 class="blog__article-title blog__article-title--main">Success Steps For Your Business Life</h3>
+                            <p class="blog__article-text">This is the author story section. Every week we try to give you the story of book writer. Tell all of you the behind the scene of their books.</p>
+                        </div>
+                    </article>
+                    <!-- /.blog__article-main -->
+                    <div class="blog__article">
+                        <article class="blog__article-item">
+                            <img class="blog__article-img" src="img/article-img-1.jpg" alt="Изображение в статье">
+                            <div class="blog__article-info">
+                                <p class="blog__article-date">23 МАРТА 2020</p>
+                                <h3 class="blog__article-title">29 Motivational Quotes for Work Environments</h3>
+                                <a href="#" class="blog__article-link">Читать</a>
+                            </div>
+                        </article>
+                        <!-- /.blog__article-item -->
+                        <article class="blog__article-item">
+                            <img class="blog__article-img" src="img/article-img-2.jpg" alt="Изображение в статье">
+                            <div class="blog__article-info">
+                                <p class="blog__article-date">28 МАРТА 2020</p>
+                                <h3 class="blog__article-title">Learn To Love Growth and&nbsp;You Will Be A Success</h3>
+                                <a href="#" class="blog__article-link">Читать</a>
+                            </div>
+                        </article>
+                        <!-- /.blog__article-item -->
+                        <article class="blog__article-item">
+                            <img class="blog__article-img" src="img/article-img-3.jpg" alt="Изображение в статье">
+                            <div class="blog__article-info">
+                                <p class="blog__article-date">28 МАРТА 2020</p>
+                                <h3 class="blog__article-title">Motivation How To Build Trust at your Work</h3>
+                                <a href="#" class="blog__article-link">Читать</a>
+                            </div>
+                        </article>
+                        <!-- /.blog__article-item -->
+                    </div>
+                </div>
+                <!-- /.blog__content -->
+                <a href="#" class="blog__button blog__button--bottom">Все Блоги</a>
+            </div>
+            <!-- /.container -->
+        </section>
         <!-- /.blog -->
         <section class="registration"></section>
         <!-- /.registration -->
@@ -699,10 +753,10 @@
         <!-- /.purchase-modal -->
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.inputmask.min.js"></script>
-    <script src="js/jquery.fancybox.js"></script>
     <script src="js/main.js"></script>
 </body>
 

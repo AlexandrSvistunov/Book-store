@@ -1,0 +1,112 @@
+/********** Blog ***********/
+.blog
+  padding-top: 100px
+  padding-bottom: 28px
+
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 44px
+
+  &__title
+    font-family: Roboto
+    font-weight: 700
+    font-size: 48px
+    letter-spacing: 0.2px
+    color: $title-color
+
+  &__button
+    border: 2px solid $button-color
+    border-radius: 22px
+    padding: 10px 53px
+
+    font-family: Roboto
+    font-weight: 700
+    font-size: 16px
+    letter-spacing: 0.2px
+    color: $button-color
+
+    &--bottom
+      display: none
+
+
+  &__content
+    display: flex
+    justify-content: space-between
+
+
+  &__article
+    display: grid
+    grid-template-rows: repeat(3,1fr)
+    grid-row-gap: 30px
+
+    &-item
+      display: flex
+
+    &-main
+      max-width: 48.8%
+      margin-right: 30px
+ 
+    &-img
+      border-radius: 8px
+      max-width: 50%
+      margin-right: 36px
+
+      &--main
+        max-width: 100%
+        max-height: 100%
+        margin-bottom: 29px
+      
+    &-title
+      margin-bottom: 19px
+
+      font-family: Roboto
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: $title-color
+
+      &--main
+        font-weight: 700
+        font-size: 24px
+
+        margin-bottom: 17px 
+
+    &-text
+      font-family: Open Sans
+      font-weight: 400
+      font-size: 18px
+      color: $text-color
+      line-height: 32px
+
+    &-date
+      font-family: Open Sans
+      font-weight: 400
+      font-size: 14px
+      color: $text-color
+
+      margin-bottom: 18px
+
+
+    &-link
+      font-family: Roboto
+      font-weight: 700
+      font-size: 16px
+      letter-spacing: 0.2px
+      color: #1665D8
+      text-transform: uppercase
+
+  
+
+    &-info
+      padding-top: 7px
+      &--main
+        padding: 0 10px
+
+  
+
+  
+
+  
