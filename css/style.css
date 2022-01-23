@@ -104,7 +104,7 @@ button {
 }
 
 .invalid {
-  color: #EC1F46;
+  color: #FAAD13;
   font-size: 14px;
 }
 
@@ -696,7 +696,7 @@ main {
 /********** Blog ***********/
 .blog {
   padding-top: 100px;
-  padding-bottom: 28px;
+  padding-bottom: 100px;
 }
 .blog__header {
   display: flex;
@@ -791,6 +791,86 @@ main {
 }
 .blog__article-info--main {
   padding: 0 10px;
+}
+
+/********** Registration ***********/
+.registration {
+  margin-bottom: 100px;
+}
+.registration .container {
+  background-image: url(../img/registration-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 60px 63px 79px 59px;
+  border-radius: 12px;
+}
+.registration__flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.registration__motivation {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  max-width: 395px;
+}
+.registration__form {
+  position: relative;
+  margin-top: 30px;
+  width: 44%;
+}
+.registration__input {
+  height: 56px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding-left: 48px;
+  padding-right: 170px;
+  font-size: 16px;
+  width: 100%;
+  height: 56px;
+}
+.registration__input::-moz-placeholder {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #959EAD;
+}
+.registration__input:-ms-input-placeholder {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #959EAD;
+}
+.registration__input::placeholder {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #959EAD;
+}
+.registration__input-ikon {
+  position: absolute;
+  z-index: 99;
+  left: 20px;
+  top: 22px;
+}
+.registration__button {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  background-color: #FAAD13;
+  border-radius: 4px;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 15px 27px;
 }
 
 /****************Footer***************/
@@ -1034,6 +1114,18 @@ main {
   .categories__item-info {
     font-size: 14px;
   }
+
+  .registration__flex-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .registration__motivation {
+    max-width: 100%;
+    text-align: center;
+  }
+  .registration__form {
+    width: 60%;
+  }
 }
 /********** Interaktive ***********/
 @media (min-width: 992px) {
@@ -1114,6 +1206,10 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
+
+  .registration__form {
+    width: 80%;
+  }
 }
 @media (max-width: 900px) {
   .blog__article {
@@ -1175,6 +1271,10 @@ main {
   }
   .blog__article-item:last-child {
     display: flex;
+  }
+
+  .registration__form {
+    width: 100%;
   }
 }
 @media (max-width: 750px) {
@@ -1352,6 +1452,50 @@ main {
   }
   .history .video--big {
     margin-bottom: 20px;
+  }
+
+  .blog {
+    padding-bottom: 48px;
+  }
+
+  .registration .container {
+    max-width: 100%;
+    border-radius: 0;
+    padding: 27px 24px 29px 25px;
+  }
+  .registration__flex-box {
+    justify-content: start;
+  }
+  .registration__motivation {
+    text-align: left;
+    max-width: 70%;
+  }
+  .registration__form {
+    height: 112px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  .registration__input {
+    padding-right: 10px;
+    height: 110px;
+    padding-bottom: 52px;
+  }
+  .registration__input:focus {
+    outline: none;
+  }
+  .registration__input-ikon {
+    top: 24px;
+  }
+  .registration__motivation {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .registration__button {
+    transform: translateX(-50%);
+    left: 50%;
+    top: 52%;
+    padding: 12px 72px;
   }
 }
 @media (max-width: 530px) {

@@ -713,7 +713,25 @@
             <!-- /.container -->
         </section>
         <!-- /.blog -->
-        <section class="registration"></section>
+        <section class="registration">
+            <div class="container">
+                <h2 class="visually-hidden">Секция регистрации</h2>
+                <div class="registration__flex-box">
+                    <p class="registration__motivation">Будь первым, кто узнает о&nbsp;наших акциях</p>
+                    <form action="send.php" method="POST" class="registration__form validate-form">
+                        <div class="registration__input-group">
+                            <img class="registration__input-ikon" src="img/svg/mail.svg" alt="Емэйл" width="16" height="12">
+                            <input class="registration__input" type="email" placeholder="Ваш Email" name="email" required>
+                            <input class="registration__button" type="submit" value="Регистрация">
+                        </div>
+                        <!-- /.registration__input-group -->
+                    </form>
+                    <!-- /.registration__form -->
+                </div>
+                <!-- /.registration__flex-box -->
+            </div>
+            <!-- /.container -->
+        </section>
         <!-- /.registration -->
     </main>
     <!-- /.Main -->
