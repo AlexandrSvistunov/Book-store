@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title></title>
@@ -16,44 +16,225 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <a href="index.html" class="logo"></a>
-            <nav>
-                <ul class="header-nav">
-                    <li class="header-nav_item">
-                        <a href="#" class="header-nav_link"></a>
+            <a href="index.html" class="logo">
+                <img src="img/svg/logo.svg" alt="Logo: Ehya" />
+            </a>
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a href="#recommended" class="header-nav__link">Рекомендации</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#books" class="header-nav__link">Книги</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#blog" class="header-nav__link">Блог</a>
                     </li>
                 </ul>
                 <!-- /.header-nav -->
             </nav>
+            <button data-toggle="modal" class="header__button">Получить</button>
+            <button class="menu-burger header__menu-burger">
+          <span class="menu-burger__line"></span>
+          <span class="menu-burger__line"></span>
+          <span class="menu-burger__line"></span>
+        </button>
         </div>
         <!-- /.container -->
+
+        <nav class="header-nav-mobile">
+            <ul class="header-nav-mobile__list">
+                <li class="header-nav-mobile__item">
+                    <a href="#recommended" class="header-nav-mobile__link">Рекомендации</a
+            >
+          </li>
+          <li class="header-nav-mobile__item">
+            <a href="#books" class="header-nav-mobile__link">Книги</a>
+                </li>
+                <li class="header-nav-mobile__item">
+                    <a href="#" class="header-nav-mobile__link">Блог</a>
+                </li>
+            </ul>
+            <!-- /.header-nav -->
+            <button data-toggle="modal" class="header__button">Получить</button>
+        </nav>
     </header>
     <!-- /.header -->
     <!-- Main -->
     <main class="main">
         <div class="dispatch-message">
-            <h2 class="dispatch-message__title">Your message has been sent&nbsp;!</h2>
-
-            <div class="dispatch-message-info">
-                <span>
-              Our manager will call you in 5 minutes.
-          </span>
-                <a href="index.html" class="dispatch-message-home">Home</a>
-            </div>
+            <div class="container">
+                <h2 class="dispatch-message__title">
+                    Ваше сообщение успешно отправлено!
+                </h2>
+                <p class="dispatch-message__info">
+                    Наш менеджер свяжется с&nbsp;Вами в ближайшие 5&nbsp;минут.
+                </p>
+                <a href="index.html" class="dispatch-message__home">На главную страницу</a
+          >
         </div>
+      </div>
     </main>
     <!-- /.main -->
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <nav class="footer-nav">
-
+      <div class="container">
+        <div class="footer__flex-container">
+          <div class="footer__left-block">
+            <img src="img/svg/logo.svg" alt="Логотип" class="footer__logo" />
+            <p class="footer__slogan">
+              Создайте современный и креативный веб-сайт с crealand
+            </p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a href="https://www.google.ru/" class="footer__social-link">
+                  <img src="img/svg/footer-icon-1.svg" alt="Google" />
+                </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://twitter.com/" class="footer__social-link">
+                        <img src="img/svg/footer-icon-2.svg" alt="Twitter" />
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://www.instagram.com/" class="footer__social-link">
+                        <img src="img/svg/footer-icon-3.svg" alt="Instagram" />
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://www.instagram.com/linkedin/" class="footer__social-link">
+                        <img src="img/svg/footer-icon-4.svg" alt="linkedin" />
+                    </a>
+                </li>
+                </ul>
+                <!-- /.footer__social -->
+            </div>
+            <!-- /.footer__left-block -->
+            <nav class="footer__nav">
+                <div class="footer__nav-item">
+                    <h3 class="footer__nav-title">Продукт</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-link">
+                            <a href="#">Лэндинг</a>
+                        </li>
+                        <li class="footer__nav-link">
+                            <a href="#">Функции</a>
+                        </li>
+                        <li class="footer__nav-link">
+                            <a href="#">Документация</a>
+                        </li>
+                        <li class="footer__nav-link">
+                            <a href="#">Скидки</a>
+                        </li>
+                        <li class="footer__nav-link">
+                            <a href="#">Расценки</a>
+                        </li>
+                    </ul>
+                    <!-- /.footer__nav-list -->
+                </div>
+                <div class="footer__nav-item">
+                    <h3 class="footer__nav-title">Сервисы</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-link">
+                            <a href="#">Документация</a>
+                        </li>
+                        <li class="footer__nav-link">
+                            <a href="#">Дизайн</a>
+                        </li>
+                        <li class="footer__nav-link">
+                            <a href="#">Темы</a>
+                        </li>
+                        <li class="footer__nav-link">
+                            <a href="#">Илюстрации</a>
+                        </li>
+                        <li class="footer__nav-link">
+                            <a href="#">UI Kit</a>
+                        </li>
+                    </ul>
+                    <!-- /.footer__nav-list -->
+                </div>
+                <!-- /.footer__nav-item -->
+                <div class="footer__nav-item">
+                    <h3 class="footer__nav-title">Компания</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-link">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="footer__nav-link">
+                            <a href="#">Условия</a>
+                        </li>
+                        <li class="footer__nav-link">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li class="footer__nav-link">
+                            <a href="#">Careers</a>
+                        </li>
+                    </ul>
+                    <!-- /.footer__nav-list -->
+                </div>
+                <!-- /.footer__nav-item -->
+                <div class="footer__nav-item">
+                    <h3 class="footer__nav-title">Еще..</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-link">
+                            <a href="#">Документация</a>
+                        </li>
+                        <li class="footer__nav-link">
+                            <a href="#">Лицензия</a>
+                        </li>
+                        <li class="footer__nav-link">
+                            <a href="#">Изменения</a>
+                        </li>
+                    </ul>
+                    <!-- /.footer__nav-list -->
+                </div>
+                <!-- /.footer__nav-item -->
             </nav>
             <!-- /.footer-nav -->
         </div>
+        <!-- /.footer__flex-container -->
+        <div class="footer__bottom">
+            <div class="footer__bottom-img">
+                <img src="img/svg/heart.svg" alt="" class="footer__img" />
+            </div>
+            <p class="footer__copyright">Copyright © 2019. Crafted with love.</p>
+        </div>
+        </div>
         <!-- /.footer-container -->
-    </footer>
-    <!-- /.footer -->
+        </footer>
+        <!-- /.footer -->
+        <a href="#" class="link-to-top"><img src="img/svg/up-arrow.svg" alt="Стрелка наверх" /></a>
+
+        <!-- Modals -->
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <!-- /.modal__overlay -->
+            <!-- purchase-modal -->
+            <div class="purchase-modal">
+                <button class="purchase-modal__close">
+          <img src="img/svg/close.svg" alt="Close" />
+        </button>
+                <h3 class="purchase-modal__title">Купить сейчас</h3>
+                <form action="send.php" method="POST" class="purchase-form validate-form" name="purchase-form">
+                    <input class="purchase-form__input" type="text" placeholder="Ваше полное имя*" name="name" required minlength="2" />
+                    <input class="purchase-form__input mask-phone" type="tel" placeholder="Номер телефона*" name="phone" required />
+                    <input class="purchase-form__input" type="email" placeholder="Email*" name="email" required />
+                    <textarea class="purchase-form__message" placeholder="Ваше сообщение" name="message"></textarea>
+                    <fieldset class="purchase-modal__footer">
+                        <input class="purchase-modal__submit" type="submit" value="Отправить" />
+                        <p>* Обязательные поля</p>
+                    </fieldset>
+                </form>
+                <!-- /.purchase-form -->
+            </div>
+            <!-- /.purchase-modal -->
+        </div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.inputmask.min.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
