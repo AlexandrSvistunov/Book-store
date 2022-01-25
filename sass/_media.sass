@@ -150,30 +150,170 @@
 /********** Interaktive ***********/
 @media (min-width: 992px)
   
-  .header-nav__item
-    position: relative
-    &:hover::before
-      transform: scaleX(1)
+  .header
+    &__button
+      &:hover
+        background-color: $button-color
+        color: #ffffff
+      &:active
+        background-color: $hover-blue-button
 
-    &::before
-      position: absolute
-      bottom: 0
-      content: ''
-      width: 100%
-      height: 1px
-      background-color: #ffffff
-      transform: scaleX(0)
-      transition: transform 0.25s
+    &-nav__item
+      position: relative
+      &:hover::before
+        transform: scaleX(1)
+
+      &::before
+        position: absolute
+        bottom: 0
+        content: ''
+        width: 100%
+        height: 1px
+        background-color: #183B56
+        transform: scaleX(0)
+        transition: transform 0.25s
 
   .purchase
     &-modal__submit
       &:hover
-        background-color: $hover-button
+        background-color: $hover-form-button
 
       &:active
-        background-color: $active-button
+        background-color: $active-form-button
 
- 
+  .product
+    &__info
+      &-leftbutton
+        &:hover
+          background-color: $hover-blue-button
+
+        &:active
+          background-color: $active-blue-button
+
+      &-rightbutton
+        &:hover
+          background-color: $button-color
+          color: #ffffff
+        &:active
+          background-color: $hover-blue-button
+
+    &-card
+      &__button
+        &:hover
+          background-color: $button-color
+
+        &:active
+          background-color: $hover-blue-button
+
+  .product-card
+    &__like
+      &:hover
+        path
+          fill: #ee0534
+
+  .recommended__button
+    &:hover
+      background-color: rgba(21, 101, 216, 0.2)
+    &:active
+      background-color: rgba(21, 101, 216, 0.1)
+
+  .best__button
+    
+    span
+      position: relative
+      &:hover
+        color: $title-color
+      &:active
+        color: $button-color
+      &:hover::before
+        transform: scaleX(1)
+
+      &::before
+        position: absolute
+        bottom: 0
+        content: ''
+        width: 100%
+        height: 1px
+        background-color: #183B56
+        transform: scaleX(0)
+        transition: transform 0.25s
+
+
+  .history
+    &__autor
+      &-like
+        &:hover
+          path
+            fill: #ee0534
+
+  .video-play
+
+    svg
+      path
+        &:hover
+          fill: #1565D8
+
+    &--big
+      svg
+        path
+          &:hover
+            fill: #4cd815
+
+      
+
+  .blog
+    &__button
+      &:hover
+        background-color: $button-color
+        color: #ffffff
+      &:active
+        background-color: $hover-blue-button
+
+    &__article-link-button
+      position: relative
+      &:hover::before
+        transform: scaleX(1)
+
+      &::before
+        position: absolute
+        bottom: 0
+        content: ''
+        width: 100%
+        height: 2px
+        background-color: #1665D8
+        transform: scaleX(0)
+        transition: transform 0.25s
+
+  .registration
+    &__button
+      &:hover
+        background-color: $hover-form-button
+
+      &:active
+        background-color: $active-form-button
+
+  .footer
+    &__nav-link
+      a
+        position: relative
+        display: inline
+        &:hover::before
+          transform: scaleX(1)
+
+        &::before
+          position: absolute
+          bottom: 0
+          content: ''
+          width: 100%
+          height: 1px
+          background-color: #183B56
+          transform: scaleX(0)
+          transition: transform 0.25s
+
+    &__social-link
+      &:hover
+        background-color: rgba(90, 113, 132, 0.2)
+
 @media (max-width: 992px)
   .product
     .container
@@ -878,4 +1018,7 @@
   
  
 @media (max-height: 600px)
-  
+  .purchase-modal
+    max-height: 100%
+    top: 51%
+    bottom: -44%

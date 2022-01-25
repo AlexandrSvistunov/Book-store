@@ -30,12 +30,12 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'ssl://smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'alsvis2021@gmail.com'; // Логин на почте
-    $mail->Password   = 'alsgmail21'; // Пароль на почте
+    $mail->Host       = 'ssl://smtp.yandex.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'alsvis2013@yandex.ru'; // Логин на почте
+    $mail->Password   = 'kaponir060'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('alsvis2021@gmail.com', 'Александр Свистунов'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('alsvis2013@yandex.ru', 'Александр Свистунов'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('alsvis2013@yandex.ru');  
