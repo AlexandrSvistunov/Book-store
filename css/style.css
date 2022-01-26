@@ -2035,7 +2035,7 @@ main {
     padding-top: 59px;
   }
   .blog__content {
-    margin-bottom: 20px;
+    margin-bottom: 37px;
   }
   .blog__button--bottom {
     font-size: 14px;
@@ -2051,20 +2051,20 @@ main {
     font-size: 28px;
   }
   .blog__article {
-    grid-row-gap: 15px;
+    grid-row-gap: 31px;
   }
   .blog__article-info {
     padding: 0;
   }
   .blog__article-title {
-    margin-bottom: -4px;
+    margin-bottom: 0px;
   }
   .blog__article-title--main {
     margin-bottom: 11px;
   }
   .blog__article-link {
     max-width: 90px;
-    max-height: 90px;
+    height: 90px;
     margin-right: 21px;
   }
   .blog__article-img--main {
