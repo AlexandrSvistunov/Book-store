@@ -462,6 +462,7 @@
     .video-play--big
       height: 80px
       width: 80px
+      
 
 
 /********** Мобильное меню ***********/ 
@@ -727,17 +728,19 @@
       height: 137px
       margin-bottom: 17px
 
+    
+    .video-play
+      svg
+        width: 21px
+        height: 27px
+
+
     .video-play--big
       width: 56px
       height: 56px
-      img
+      svg
         width: 17px
         height: 22px
-
-    .video-play
-      img
-        width: 21px
-        height: 27px
 
     &__autor-info
       flex-direction: column
@@ -754,12 +757,11 @@
 
       &-books
         font-size: 12px
-        margin-bottom: 8px
+        margin-bottom: 14px
 
       &-like
-        img
-          width: 10px
-          height: 14px
+        width: 10px
+        height: 14px
 
 
 
@@ -893,6 +895,7 @@
 @media (max-width: 420px)
   .history
     margin-bottom: 2px
+    padding-bottom: 35px
 
   .partners
     padding-top: 37px
@@ -915,7 +918,7 @@
         
   .blog
     &__content
-      margin-bottom: 24px
+      margin-bottom: 20px
 
     &__button--bottom
       font-size: 14px
@@ -939,7 +942,7 @@
         padding: 0
 
       &-title
-        margin-bottom: 9px
+        margin-bottom: -4px
         &--main
           margin-bottom: 11px
 
@@ -961,7 +964,7 @@
         line-height: 19px
         margin-bottom: 6px
 
-      &-link
+      &-link-button
         font-size: 10px
 
       

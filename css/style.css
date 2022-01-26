@@ -339,7 +339,7 @@ main {
 }
 .product-card__img-box {
   max-width: 160px;
-  max-height: 238px;
+  height: 238px;
   background-color: rgba(179, 186, 197, 0.1);
   border-radius: 8px;
   overflow: hidden;
@@ -765,7 +765,7 @@ main {
   margin-bottom: 29px;
 }
 .blog__article-title {
-  margin-bottom: 19px;
+  margin-bottom: 13px;
   font-family: Roboto;
   font-weight: 500;
   font-size: 22px;
@@ -1840,17 +1840,17 @@ main {
     height: 137px;
     margin-bottom: 17px;
   }
+  .history .video-play svg {
+    width: 21px;
+    height: 27px;
+  }
   .history .video-play--big {
     width: 56px;
     height: 56px;
   }
-  .history .video-play--big img {
+  .history .video-play--big svg {
     width: 17px;
     height: 22px;
-  }
-  .history .video-play img {
-    width: 21px;
-    height: 27px;
   }
   .history__autor-info {
     flex-direction: column;
@@ -1865,9 +1865,9 @@ main {
   }
   .history__autor-books {
     font-size: 12px;
-    margin-bottom: 8px;
+    margin-bottom: 14px;
   }
-  .history__autor-like img {
+  .history__autor-like {
     width: 10px;
     height: 14px;
   }
@@ -2009,6 +2009,7 @@ main {
 @media (max-width: 420px) {
   .history {
     margin-bottom: 2px;
+    padding-bottom: 35px;
   }
 
   .partners {
@@ -2034,7 +2035,7 @@ main {
     padding-top: 59px;
   }
   .blog__content {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
   .blog__button--bottom {
     font-size: 14px;
@@ -2056,7 +2057,7 @@ main {
     padding: 0;
   }
   .blog__article-title {
-    margin-bottom: 9px;
+    margin-bottom: -4px;
   }
   .blog__article-title--main {
     margin-bottom: 11px;
@@ -2077,7 +2078,7 @@ main {
     line-height: 19px;
     margin-bottom: 6px;
   }
-  .blog__article-link {
+  .blog__article-link-button {
     font-size: 10px;
   }
 }
